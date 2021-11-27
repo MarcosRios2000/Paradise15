@@ -4,11 +4,46 @@
   .inputContainer {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     max-width: 15rem;
     margin: 0 auto;
-    /* color: seashell; */
-    font-size: 15px;
+    color: seashell;
+  }
+  .inputContainer input{
+    width: 14.5rem;
+    height: 10px;
+  }
+  .inputContainerInquery {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 15rem;
+    margin: 0 auto;
+    color: seashell;
+  }
+  .inputContainerInquery input{
+    width: 14.5rem;
+    height: 60px;
   }
   .error {
-    color: rgb(252, 90, 90);
+    color: red;
+  }
+  .formContainer{
+    background-color: #004c80;
+    border-radius: 20px;
+    margin-top: 5rem;
+    margin-left: 33.5rem;
+    margin-right: 33.5rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    color: seashell;
+  }
+  .button{
+    background-color: #00c0c3;
+    border: none;
+    color: white;
+    
+  }
+  .container{
+    background-color: #e3dfde;
   }

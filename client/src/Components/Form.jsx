@@ -1,5 +1,5 @@
 import './Form.css'
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 
 
@@ -68,8 +68,10 @@ export default function Form(){
     };
 
     return(
-        <div>
+        <div className="container">
+        <div className="formContainer">
             <form onSubmit={handleSubmit}>
+               <label>Envianos tu consulta</label>
                 <div className={`inputContainer ${error.name ? "danger" : ""}`}>
                     <label>Nombre:</label>
                         <input
@@ -82,6 +84,7 @@ export default function Form(){
                             value={input.name}
                             className={error && "danger"}
                         />
+                        <span className="error">{error?.name}</span>
                 </div>
                 <div className={`inputContainer ${error.lastname ? "danger" : ""}`}>
                     <label>Apellido:</label>
@@ -95,6 +98,7 @@ export default function Form(){
                             value={input.lastname}
                             className={error && "danger"}
                         />
+                        <span className="error">{error?.lastname}</span>
                 </div>
                 <div className={`inputContainer ${error.country ? "danger" : ""}`}>
                     <label>Pais:</label>
@@ -108,6 +112,7 @@ export default function Form(){
                             value={input.country}
                             className={error && "danger"}
                         />
+                        <span className="error">{error?.country}</span>
                 </div>
                 <div className={`inputContainer ${error.school ? "danger" : ""}`}>
                     <label>Colegio:</label>
@@ -121,6 +126,7 @@ export default function Form(){
                             value={input.school}
                             className={error && "danger"}
                         />
+                        <span className="error">{error?.school}</span>
                 </div>
                 <div className={`inputContainer ${error.phone ? "danger" : ""}`}>
                     <label>Celular:</label>
@@ -134,6 +140,7 @@ export default function Form(){
                             value={input.phone}
                             className={error && "danger"}
                         />
+                        <span className="error">{error?.phone}</span>
                 </div>
                 <div className={`inputContainer ${error.email ? "danger" : ""}`}>
                     <label>E-mail:</label>
@@ -147,8 +154,9 @@ export default function Form(){
                             value={input.email}
                             className={error && "danger"}
                         />
+                        <span className="error">{error?.email}</span>
                 </div>
-                <div className={`inputContainer ${error.inquery ? "danger" : ""}`}>
+                <div className={`inputContainerInquery ${error.inquery ? "danger" : ""}`}>
                     <label>Consulta:</label>
                         <input
                             onChange={(e) => {
@@ -160,11 +168,13 @@ export default function Form(){
                             value={input.inquery}
                             className={error && "danger"}
                         />
+                        <span className="error">{error?.inquery}</span>
                 </div>
                 <button className="button" type="submit">
-                    Submit
+                    Enviar
                 </button>
             </form>
+        </div>
         </div>
     )
 }
