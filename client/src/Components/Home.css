@@ -1,7 +1,11 @@
 .logo{
     height: 120px;
+    margin-top: 1rem;
 }
-.container{
+.homeContainer{
     background-color: #e3dfde;
     min-height: 100vh
+}
+.paginaConstruccion{
+    margin-top: 10px;
 }
