@@ -9,9 +9,13 @@
     margin: 0 auto;
     color: seashell;
   }
+  .inputContainer label{
+    margin-left: -10px;
+  }
   .inputContainer input{
-    width: 14.5rem;
+    width: 16rem;
     height: 10px;
+    margin-left: -10px;
   }
   .inputContainerInquery {
     display: flex;
@@ -21,9 +25,13 @@
     margin: 0 auto;
     color: seashell;
   }
+  .inputContainerInquery label{
+    margin-left: -10px;
+  }
   .inputContainerInquery input{
-    width: 14.5rem;
+    width: 16rem;
     height: 60px;
+    margin-left: -10px;
   }
   .error {
     color: red;
@@ -31,19 +39,26 @@
   .formContainer{
     background-color: #004c80;
     border-radius: 20px;
-    margin-top: 5rem;
-    margin-left: 33.5rem;
-    margin-right: 33.5rem;
+    margin-top: 3rem;
+    margin-left: 32rem;
+    margin-right: 32rem;
     padding-bottom: 3rem;
     padding-top: 1rem;
     color: seashell;
+    
   }
   .button{
     background-color: #00c0c3;
     border: none;
     color: white;
-    
+    margin-top: 10px;
+    min-width: 70px;
+    border-radius: 2px;
   }
   .container{
     background-color: #e3dfde;
+    margin-bottom: 10px;
+  }
+  .logoSmall{
+    height: 35px;
   }

@@ -70,6 +70,7 @@ export default function Form(){
     return(
         <div className="container">
         <div className="formContainer">
+            <img className="logoSmall" src="/images/LogoParadiseSmall.png" alt="Logo" />
             <form onSubmit={handleSubmit}>
                <label>Envianos tu consulta</label>
                 <div className={`inputContainer ${error.name ? "danger" : ""}`}>
