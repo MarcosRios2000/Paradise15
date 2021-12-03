@@ -1,4 +1,4 @@
-
+require('dotenv').config();
    
 const nodemailer = require('nodemailer');
 
@@ -39,7 +39,7 @@ const config = {
          user: MAILER_USER_DEV,
          pass: MAILER_PASS_DEV,
 }
-const transporter = nodemailer.createTransport({
+const transporter = nodemailer.createTransport({  
   host: config.host,
   port: config.port,
   secure: config.secure,
