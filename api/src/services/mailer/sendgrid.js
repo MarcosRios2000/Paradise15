@@ -1,6 +1,7 @@
 import sgMail from '@sendgrid/mail';
+const { MAILER_PASS_DEV } = process.env;
 sgMail.setApiKey(
-  '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'
+  MAILER_PASS_DEV
 );
 
 export default sgMail;
