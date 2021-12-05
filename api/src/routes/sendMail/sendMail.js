@@ -16,7 +16,13 @@ router.post("/query", (req, res, next) =>{
         from: MAILER_EMAIL_DEV,
         to: "Fernando.Kaganovicz@hotmail.com",
         subject: "Titulo del mail",
-        text: "Contenido del mail"
+        text: `Nombre: ${name}
+               Apellido: ${lastName}
+               País: ${country}
+               Escuela: ${school}
+               Cel: ${celPhone}
+               email: ${email}
+               Consulta: ${query}`
     }
 
 
