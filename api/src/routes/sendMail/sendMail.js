@@ -15,7 +15,7 @@ router.post("/query", (req, res, next) =>{
     const emailOptions = {
         from: MAILER_EMAIL_DEV,
         to: "Fernando.Kaganovicz@hotmail.com",
-        subject: "Titulo del mail",
+        subject: "Nueva consulta PARADISE 15",
         text: `Nombre: ${name}
                Apellido: ${lastName}
                País: ${country}
