@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.post("/query", (req, res, next) =>{
 
-    const { name, lastName, country, school, celPhone, email, query } = req.body;
+    const { name, lastName, country, school, phone, email, query } = req.body;
 
 
     const emailOptions = {
@@ -20,7 +20,7 @@ router.post("/query", (req, res, next) =>{
                Apellido: ${lastName}
                País: ${country}
                Escuela: ${school}
-               Cel: ${celPhone}
+               Cel: ${phone}
                email: ${email}
                Consulta: ${query}`
     }
