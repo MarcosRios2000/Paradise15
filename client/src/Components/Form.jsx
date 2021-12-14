@@ -1,11 +1,12 @@
 import './Form.css'
 import React, { useState } from "react";
+import axios from 'axios';
 
 
 
 const initialState = {
     name: "",
-    lastname: "",
+    lastName: "",
     country: "",
     school: "",
     phone: "",
@@ -27,7 +28,7 @@ export default function Form(){
         let { name } = e.target;
         let strings = [
             "name",
-            "lastname",
+            "lastName",
             "country",
             "school",
             "inquery",
@@ -57,6 +58,15 @@ export default function Form(){
 
     const handleSubmit = function (e) {
         e.preventDefault();
+        const form = {name: input.name, lastName: input.lastName, 
+            country: input.country, school: input.school, phone: input.phone,
+            email: input.email, inquery: input.inquery }
+        axios.post('http://localhost:3001/sendMail/query', form)
+        .then(response => {
+            console.log(response)
+            alert('Se ha enviado su consulta')
+        })
+        .catch(err => alert(err))
         clearForm();
     };
     
@@ -87,7 +97,7 @@ export default function Form(){
                         />
                         <span className="error">{error?.name}</span>
                 </div>
-                <div className={`inputContainer ${error.lastname ? "danger" : ""}`}>
+                <div className={`inputContainer ${error.lastName ? "danger" : ""}`}>
                     <label>Apellido:</label>
                         <input
                             onChange={(e) => {
@@ -95,11 +105,11 @@ export default function Form(){
                                 validateInput(e);
                                 }}
                             type="text"
-                            name="lastname"
-                            value={input.lastname}
+                            name="lastName"
+                            value={input.lastName}
                             className={error && "danger"}
                         />
-                        <span className="error">{error?.lastname}</span>
+                        <span className="error">{error?.lastName}</span>
                 </div>
                 <div className={`inputContainer ${error.country ? "danger" : ""}`}>
                     <label>Pais:</label>
