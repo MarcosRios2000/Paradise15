@@ -9,8 +9,7 @@ const router = express.Router();
 
 router.post("/query", (req, res, next) =>{
 
-    const { name, lastName, country, school, phone, email, query } = req.body;
-
+    const { name, lastName, country, school, phone, email, inquery } = req.body;
 
     const emailOptions = {
         from: MAILER_EMAIL_DEV,
@@ -22,7 +21,7 @@ router.post("/query", (req, res, next) =>{
                Escuela: ${school}
                Cel: ${phone}
                email: ${email}
-               Consulta: ${query}`
+               Consulta: ${inquery}`
     }
 
 
