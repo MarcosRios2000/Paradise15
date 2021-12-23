@@ -41,8 +41,8 @@ export default function Form(){
             }
         }
         if(name === "phone"){
-            if(e.target.value.length < 9){
-                setError({ ...error, [name]: "Mínimo 10 numeros" });
+            if(isNaN(e.target.value) || e.target.value.length < 9){
+                setError({ ...error, [name]: "Solo números, mínimo 10" });
             } else {
                 setError({ ...error, [name]: "" });
             }
@@ -64,10 +64,13 @@ export default function Form(){
         axios.post('http://localhost:3001/sendMail/query', form)
         .then(response => {
             console.log(response)
-            alert('Se ha enviado su consulta')
         })
         .catch(err => alert(err))
+        window.scrollTo(0, 0)
         clearForm();
+    };
+    const handleSubmitDsabled = function (e) {
+        e.preventDefault();
     };
     
     const handleInputChange = function (e) {
@@ -79,12 +82,27 @@ export default function Form(){
 
     return(
         <div className="container">
+            <img className="logo" src="/images/LogoParadise.png" alt="Logo" />
+            <div className="paginaConstruccion">🚧 Página en construcción 🚧</div>
         <div className="formContainer">
             <img className="logoSmall" src="/images/LogoParadiseSmall.png" alt="Logo" />
-            <form onSubmit={handleSubmit}>
-               <label>Envianos tu consulta</label>
+            <form onSubmit={(error.inquery 
+                    || error.name 
+                    || error.lastName 
+                    || error.country 
+                    || error.school 
+                    || error.phone 
+                    || error.email ) 
+                    || (input.inquery.length === 0
+                        || input.name.length === 0
+                        || input.lastName.length === 0
+                        || input.country.length === 0
+                        || input.school.length === 0
+                        || input.phone.length === 0
+                        || input.email.length === 0) ? handleSubmitDsabled : handleSubmit}>
+               <div>Envianos tu consulta</div>
                 <div className={`inputContainer ${error.name ? "danger" : ""}`}>
-                    <label>Nombre:</label>
+                    <label className='titulos'>Nombre:</label>
                         <input
                             onChange={(e) => {
                                 handleInputChange(e);
@@ -169,7 +187,7 @@ export default function Form(){
                 </div>
                 <div className={`inputContainerInquery ${error.inquery ? "danger" : ""}`}>
                     <label>Consulta:</label>
-                        <input
+                        <textarea
                             onChange={(e) => {
                                 handleInputChange(e);
                                 validateInput(e);
@@ -177,11 +195,25 @@ export default function Form(){
                             type="text"
                             name="inquery"
                             value={input.inquery}
-                            className={error && "danger"}
-                        />
+                            className={error && "danger"}>
+                            </textarea>
                         <span className="error">{error?.inquery}</span>
                 </div>
-                <button className="button" type="submit">
+                <button className={`button ${(error.inquery 
+                    || error.name 
+                    || error.lastName 
+                    || error.country 
+                    || error.school 
+                    || error.phone 
+                    || error.email ) 
+                    || (input.inquery.length === 0
+                        || input.name.length === 0
+                        || input.lastName.length === 0
+                        || input.country.length === 0
+                        || input.school.length === 0
+                        || input.phone.length === 0
+                        || input.email.length === 0)
+                    ? "buttonDanger" : ""}`} type="submit">
                     Enviar
                 </button>
             </form>
