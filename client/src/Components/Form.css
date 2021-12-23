@@ -1,64 +1,110 @@
 .danger input {
     border: 1px solid red;
   }
+  .danger textarea{
+    border: 1px solid red;
+  }
   .inputContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 15rem;
+    align-items: center;
     margin: 0 auto;
     color: seashell;
   }
   .inputContainer label{
-    margin-left: -10px;
+    display: flex;
+    align-self:flex-start;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
   }
   .inputContainer input{
-    width: 16rem;
+    width: 255px; 
     height: 10px;
-    margin-left: -10px;
   }
   .inputContainerInquery {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 15rem;
+    align-items: center;
     margin: 0 auto;
     color: seashell;
   }
   .inputContainerInquery label{
-    margin-left: -10px;
+    display: flex;
+    align-self:flex-start;
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
   }
-  .inputContainerInquery input{
-    width: 16rem;
+  .inputContainerInquery textarea{
+    width: 255px;
     height: 60px;
-    margin-left: -10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    outline: 0;
+    resize: none;
   }
   .error {
-    color: red;
+    -webkit-text-stroke: 0.5px red;
+    color: rgb(250, 32, 32);
+    font-size: 12px;
   }
   .formContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: #004c80;
-    border-radius: 20px;
-    margin-top: 3rem;
-    margin-left: 32rem;
-    margin-right: 32rem;
-    padding-bottom: 3rem;
-    padding-top: 1rem;
     color: seashell;
-    
-  }
-  .button{
-    background-color: #00c0c3;
-    border: none;
-    color: white;
-    margin-top: 10px;
-    min-width: 70px;
-    border-radius: 2px;
+    border-radius: 8px;
+    min-width: 320px;
+    max-height: 550 px;
   }
   .container{
     background-color: #e3dfde;
-    margin-bottom: 10px;
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .logoSmall{
-    height: 35px;
+    height: 30px;
+    margin-top: 5px;
+  }
+  .logo{
+    height: 120px;
+    margin-top: 10px;
+  }
+.paginaConstruccion{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.formContainer div{
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+}
+.button{
+  background-color: #00c0c3;
+  border: none;
+  color: white;
+  margin-top: 10px;
+  min-width: 70px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+  max-height: 18px; 
+  margin-bottom: 3px;
+  }
+.buttonDanger{
+  background-color: #00c0c363;
+    border: none;
+    color: rgba(255, 255, 255, 0.247);
+    margin-top: 10px;
+    min-width: 80px;
+    border-radius: 2px;
+    cursor: auto;
+    font-family: 'Kanit', sans-serif;
+    max-height: 18px;
+    margin-bottom: 10px;
+    
   }
