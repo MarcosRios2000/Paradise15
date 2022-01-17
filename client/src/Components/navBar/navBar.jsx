@@ -1,6 +1,6 @@
 import './navBar.css'
 // import DehazeIcon from '@mui/icons-material/Dehaze';
-import MenuButton from '../../images/menu-button.png'
+import MenuButton from '../../assets/images/menu-button.png'
 
 
 

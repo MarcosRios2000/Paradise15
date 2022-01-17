@@ -2,15 +2,9 @@ import './Form.css';
 import React, { useState } from "react";
 import axios from 'axios';
 import { Carousel } from '../carousel/carousel';
-import OndaNaranja from '../../images/ONDA NARANJA.png';
-import OndaVerde from '../../images/ONDA VERDE.png';
-import BotonIzquierda from '../../images/BOTON IZQUIERDA.png';
-import BotonDerecha from '../../images/BOTON DERECHA.png';
+import BotonIzquierda from '../../assets/images/BOTON IZQUIERDA.png';
+import BotonDerecha from '../../assets/images/BOTON DERECHA.png';
 import { NavBar } from '../navBar/navBar.jsx';
-
-
-
-
 
 
 const initialState = {
@@ -82,8 +76,15 @@ export default function Form() {
     
     return (
 
-        <div className="container">
-            <NavBar/>
+        
+
+    <div className="ondaNaranju">
+        <div className="ondaVerde">
+
+        
+        
+            <div className="container">
+                <NavBar/>
 
             {/* <Carousel className='carousel'>
                 {
@@ -179,15 +180,18 @@ export default function Form() {
                     </button>
                 </form>
             </div>
-                <img className='ondaNaranja' src={OndaNaranja} alt='img not found'/>
-                <img className='ondaVerde' src={OndaVerde} alt='img not found'/>
-                {/* <button className='btn-left'>
-                    <img className='btn-icon-left' src={BotonIzquierda} alt='img not found'/>
-                </button> */}
-                <img className='btn-icon-left' src={BotonIzquierda} alt='img not found'/>
+                {/* <div className='ondaNaranja'>
+
+                </div> */}
+                {/*<img className='ondaNaranja' src={OndaNaranja} alt='img not found'/>
+                        <img className='ondaVerde' src={OndaVerde} alt='img not found'/>*/}
+                
+                {/*<img className='btn-icon-left' src={BotonIzquierda} alt='img not found'/>
                 <strong className='btn-text-left'>Quinciañeras a Brasil</strong>
                 <img className='btn-icon-right' src={BotonDerecha} alt='img not found'/>
-                <strong className='btn-text-right'>Quinciañeras a Argentina</strong>
+                    <strong className='btn-text-right'>Quinciañeras a Argentina</strong>*/}
+            </div>
         </div>
+    </div>
     )
 }
