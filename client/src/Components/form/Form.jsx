@@ -78,26 +78,18 @@ export default function Form() {
 
         
 
-    <div className="ondaNaranju">
-        <div className="ondaVerde">
+    
+        <div className="together-waves">
 
         
         
             <div className="container">
                 <NavBar/>
 
-            {/* <Carousel className='carousel'>
-                {
-                    images.map((e, i) => {
-                        return <img style={{width: '100px', height: '100px'}} key={i} src={e} alt='img not found'/>
-                    })
-                }
-            </Carousel> */}
-            <Carousel/>
+        
+                <Carousel/>
 
                 
-
-            {/* <img className="logo" src="/images/LogoParadise.png" alt="Logo" /> */}
             <div className="paginaConstruccion">🚧 Página en construcción 🚧</div>
             <div className="formContainer">
                 <img className="logoSmall" src="/images/LogoParadiseSmall.png" alt="Logo" />
@@ -186,12 +178,11 @@ export default function Form() {
                 {/*<img className='ondaNaranja' src={OndaNaranja} alt='img not found'/>
                         <img className='ondaVerde' src={OndaVerde} alt='img not found'/>*/}
                 
-                {/*<img className='btn-icon-left' src={BotonIzquierda} alt='img not found'/>
-                <strong className='btn-text-left'>Quinciañeras a Brasil</strong>
-                <img className='btn-icon-right' src={BotonDerecha} alt='img not found'/>
-                    <strong className='btn-text-right'>Quinciañeras a Argentina</strong>*/}
+                <img className='btnIconLeft' src={BotonIzquierda} alt='img not found'/>
+                <strong className='btnTextLeft'>Quinciañeras a Brasil</strong>
+                <img className='btnIconRight' src={BotonDerecha} alt='img not found'/>
+                    <strong className='btnTextRight'>Quinciañeras a Argentina</strong>
             </div>
         </div>
-    </div>
     )
 }
