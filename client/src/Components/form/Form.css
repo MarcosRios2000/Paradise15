@@ -60,15 +60,34 @@
   max-height: 550 px;
 }
 .container{
-  background-color: #e3dfde;
+  /* background-color: #e3dfde; */
+  
   min-height: 100%;
   min-width: 100%;
   height: 100vh;
-  /* width: 100vh; */
+  max-width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+
+.ondaNaranju{
+  background-image: url('../../assets/images/ONDA\ NARANJA.png');
+  background-position: 0% 800%;
+  background-color: #e3dfde;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.ondaVerde{
+  background-image: url('../../assets/images/ONDA\ VERDE.png');
+  background-position: 0% 210%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
 .logoSmall{
   height: 30px;
   margin-top: 5px;
@@ -112,17 +131,23 @@ margin-bottom: 3px;
   
 }
 
-.ondaNaranja{
-  margin-top: -150px;
-  height: 50%;
-  width: 110%;
+/* .ondaNaranja{
+  background-image: url('../../assets/images/ONDA\ NARANJA.png');
+  height: 500px;
+  width: 1510px;
+  min-width: 101.6%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 .ondaVerde{
   margin-top: -335px;
   height: 50%;
   width: 110%;
-}
+} */
+
 
 .btn-icon-left{
   margin-right: 600px;
