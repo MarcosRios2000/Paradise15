@@ -1,8 +1,16 @@
-import './Form.css'
+import './Form.css';
 import React, { useState } from "react";
 import axios from 'axios';
+import { Carousel } from '../carousel/carousel';
+import OndaNaranja from '../../images/ONDA NARANJA.png';
+import OndaVerde from '../../images/ONDA VERDE.png';
+import BotonIzquierda from '../../images/BOTON IZQUIERDA.png';
+import BotonDerecha from '../../images/BOTON DERECHA.png';
+import { NavBar } from '../navBar/navBar.jsx';
 
-const {HEROKU_BACK} = process.env
+
+
+
 
 
 const initialState = {
@@ -52,7 +60,7 @@ export default function Form() {
             city: input.city, whatsapp: input.whatsapp,
             inquery: input.inquery
         }
-        axios.post(`${HEROKU_BACK}/sendMail/query`, form)
+        axios.post(`https://paradise15.herokuapp.com/sendMail/query`, form)
             .then(response => {
                 console.log(response)
             })
@@ -71,10 +79,24 @@ export default function Form() {
             [e.target.name]: e.target.value,
         });
     };
-
+    
     return (
+
         <div className="container">
-            <img className="logo" src="/images/LogoParadise.png" alt="Logo" />
+            <NavBar/>
+
+            {/* <Carousel className='carousel'>
+                {
+                    images.map((e, i) => {
+                        return <img style={{width: '100px', height: '100px'}} key={i} src={e} alt='img not found'/>
+                    })
+                }
+            </Carousel> */}
+            <Carousel/>
+
+                
+
+            {/* <img className="logo" src="/images/LogoParadise.png" alt="Logo" /> */}
             <div className="paginaConstruccion">🚧 Página en construcción 🚧</div>
             <div className="formContainer">
                 <img className="logoSmall" src="/images/LogoParadiseSmall.png" alt="Logo" />
@@ -97,7 +119,7 @@ export default function Form() {
                             type="text"
                             id="completeName"
                             name="completeName"
-                            value={input.name}
+                            value={input.completeName}
                             className={error && "danger"}
                         />
                         <span className="error">{error?.completeName}</span>
@@ -138,7 +160,7 @@ export default function Form() {
                                 validateInput(e);
                             }}
                             type="text"
-                            name="inquery"
+                            name="inquery" 
                             value={input.inquery}
                             className={error && "danger"}>
                         </textarea>
@@ -157,6 +179,15 @@ export default function Form() {
                     </button>
                 </form>
             </div>
+                <img className='ondaNaranja' src={OndaNaranja} alt='img not found'/>
+                <img className='ondaVerde' src={OndaVerde} alt='img not found'/>
+                {/* <button className='btn-left'>
+                    <img className='btn-icon-left' src={BotonIzquierda} alt='img not found'/>
+                </button> */}
+                <img className='btn-icon-left' src={BotonIzquierda} alt='img not found'/>
+                <strong className='btn-text-left'>Quinciañeras a Brasil</strong>
+                <img className='btn-icon-right' src={BotonDerecha} alt='img not found'/>
+                <strong className='btn-text-right'>Quinciañeras a Argentina</strong>
         </div>
     )
 }
