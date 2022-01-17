@@ -1,0 +1,24 @@
+.navBar-container{
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    background-color: rgb(240, 231, 231);
+    height: 50px;
+    width: 105%;
+    box-shadow: black;
+    
+}
+
+.menu-icon{
+    margin-right: 1450px;
+    margin-top: 10px;
+    height: 20px;
+    color: #004c80;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 38px;
+    margin-top: -25px;
+}

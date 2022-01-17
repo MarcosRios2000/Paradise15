@@ -1,0 +1,149 @@
+.danger input {
+  border: 1px solid red;
+}
+.danger textarea{
+  border: 1px solid red;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  color: seashell;
+}
+.inputContainer label{
+  display: flex;
+  align-self:flex-start;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+}
+.inputContainer input{
+  width: 255px; 
+  height: 20px;
+}
+.inputContainerInquery {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  color: seashell;
+}
+.inputContainerInquery label{
+  display: flex;
+  align-self:flex-start;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+}
+.inputContainerInquery textarea{
+  width: 255px;
+  height: 60px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 12px;
+  outline: 0;
+  resize: none;
+}
+.error {
+  -webkit-text-stroke: 0.5px red;
+  color: rgb(250, 32, 32);
+  font-size: 12px;
+}
+.formContainer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #004c80;
+  color: seashell;
+  border-radius: 8px;
+  min-width: 320px;
+  max-height: 550 px;
+}
+.container{
+  background-color: #e3dfde;
+  min-height: 100%;
+  min-width: 100%;
+  height: 100vh;
+  /* width: 100vh; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.logoSmall{
+  height: 30px;
+  margin-top: 5px;
+}
+.logo{
+  margin: auto;
+  height: 38px;
+  margin-top: 10px;
+}
+.paginaConstruccion{
+margin-top: 10px;
+margin-bottom: 15px;
+}
+.formContainer div{
+font-family: 'Kanit', sans-serif;
+font-size: 14.3px;
+}
+.button{
+background-color: #00c0c3;
+border: none;
+color: white;
+margin-top: 10px;
+min-width: 70px;
+border-radius: 2px;
+cursor: pointer;
+font-family: 'Kanit', sans-serif;
+max-height: 18px; 
+margin-bottom: 3px;
+}
+.buttonDanger{
+  background-color: #00c0c363;
+  border: none;
+  color: rgba(255, 255, 255, 0.247);
+  margin-top: 10px;
+  min-width: 80px;
+  border-radius: 2px;
+  cursor: auto;
+  font-family: 'Kanit', sans-serif;
+  max-height: 18px;
+  margin-bottom: 10px;
+  
+}
+
+.ondaNaranja{
+  margin-top: -150px;
+  height: 50%;
+  width: 110%;
+}
+
+.ondaVerde{
+  margin-top: -335px;
+  height: 50%;
+  width: 110%;
+}
+
+.btn-icon-left{
+  margin-right: 600px;
+  margin-top: -130px;
+  width: 20%;
+  height: 10%;
+}
+
+.btn-text-left{
+  margin-top: -40px;
+  margin-left: -600px;
+}
+
+.btn-icon-right{
+  margin-left: 600px;
+  margin-top: -30px;
+  width: 20%;
+  height: 10%;
+}
+
+.btn-text-right{
+  margin-top: -40px;
+  margin-right: -600px;
+}
