@@ -64,7 +64,7 @@
   
   min-height: 100%;
   min-width: 100%;
-  height: 100vh;
+  height: 150vh;
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -78,11 +78,12 @@
 }
 
 .together-waves{
-  background-image: url('../../assets/images/ondasJuntas.png');
-  background-position: 0% 200%;
+  background-image: url('../../assets/images/BarraDeColor.png');
+  background-position: 0% 110%;
   background-color: #e3dfde;
   background-repeat: no-repeat;
   background-size: contain;
+  
 }
 
 @media (max-width: 360px){
@@ -146,50 +147,52 @@ margin-bottom: 3px;
   
 }
 
-/* .ondaNaranja{
-  background-image: url('../../assets/images/ONDA\ NARANJA.png');
-  height: 500px;
-  width: 1510px;
-  min-width: 101.6%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: -40px;
-  margin-right: -40px;
+.btns{
+  display:flex;
+  justify-content: center;
+  max-width: 15%;
+  align-items: center;
+  margin-top: 13%;
 }
 
-.ondaVerde{
-  margin-top: -335px;
-  height: 50%;
-  width: 110%;
-} */
-
-
-.btnIconLeft{
-  margin-right: 800px;
-  margin-top: -20px;
-  width: 20%;
-  height: 7%;
+.btns img{
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  min-height: 70%;
+  margin-top: 9%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.btnTextLeft{
-  margin-top: -40px;
-  margin-left: -800px;
+.iconLeft{
+  display: flex;
 }
 
-.btnIconRight{
-  margin-left: 800px;
-  margin-top: -40px;
-  width: 20%;
-  height: 7%;
+.iconRight{
+  display: flex;
 }
 
-.btnTextRight{
-  margin-top: -40px;
-  margin-right: -800px;
+.iconMedium{
+  margin-top: 10px;
+  min-width: 2%;
+  min-height: 2%;
+}
+
+.logoFooter{
+    margin-top: -50px;
+    height: 50px;
+}
+
+.divLogoFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 }
 
 @media (min-width:360px){
-  .btnIconLeft {
+  .iconLeft {
     margin-top: 0px;
     margin-right:180px;
     margin-bottom: 0px;
@@ -197,7 +200,7 @@ margin-bottom: 3px;
     width: 40%
   }
 
-  .btnIconRight {
+  .iconRight {
     margin-top: 40px;
     margin-left:180px;
     margin-bottom: 0px;
@@ -205,13 +208,4 @@ margin-bottom: 3px;
     width: 40%;
   }
 
-  .btnTextRight{
-    margin-top: -100px;
-  margin-right: 0px;
-  }
-
-  .btnTextLeft{
-    margin-top: -20px;
-    size: 10px;
-  }
 }

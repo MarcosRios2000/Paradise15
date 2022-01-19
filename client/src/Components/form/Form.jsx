@@ -2,8 +2,9 @@ import './Form.css';
 import React, { useState } from "react";
 import axios from 'axios';
 import { Carousel } from '../carousel/carousel';
-import BotonIzquierda from '../../assets/images/BOTON IZQUIERDA.png';
-import BotonDerecha from '../../assets/images/BOTON DERECHA.png';
+import BotonIzquierda from '../../assets/images/Brasil.png';
+import BotonDerecha from '../../assets/images/Argentina.png';
+import BotonCentral from '../../assets/images/BtnCentral.png';
 import { NavBar } from '../navBar/navBar.jsx';
 
 
@@ -177,11 +178,14 @@ export default function Form() {
                 </div> */}
                 {/*<img className='ondaNaranja' src={OndaNaranja} alt='img not found'/>
                         <img className='ondaVerde' src={OndaVerde} alt='img not found'/>*/}
-                
-                <img className='btnIconLeft' src={BotonIzquierda} alt='img not found'/>
-                <strong className='btnTextLeft'>Quinciañeras a Brasil</strong>
-                <img className='btnIconRight' src={BotonDerecha} alt='img not found'/>
-                    <strong className='btnTextRight'>Quinciañeras a Argentina</strong>
+            <div className='btns'>
+                <img className='iconLeft' src={BotonIzquierda} alt='img not found'/>
+                <img className='iconRight' src={BotonDerecha} alt='img not found'/>
+            </div>
+                <img className='iconMedium' src={BotonCentral} alt='img not found'/>
+            </div>
+            <div className='divLogoFooter'>
+                <img className='logoFooter' src="/images/LogoParadise.png" alt="img not found" />
             </div>
         </div>
     )
