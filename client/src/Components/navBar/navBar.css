@@ -16,8 +16,15 @@
     
 }
 
+@media (max-width: 360px){
+    .navBar-container{
+        width: 107.3%;
+    }
+}
+
 .menu-icon{
     position: absolute;
+    margin-left: 20%;
     height: 20px;
     color: #004c80;
 }
@@ -26,5 +33,5 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    height: 38px;
+    height: 25px;
 }
