@@ -198,6 +198,18 @@
 }
 
 
+
+
+@media (max-width: 720px){
+  .together-waves {
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 1560px;
+  }
+  .btns {
+    margin-top: 50%;
+  }
+}
+
 @media (max-width: 620px) {
 
   .together-waves {
@@ -220,20 +232,17 @@
   }
 }
 
-@media (max-width: 720px){
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 1560px;
-  }
-  .btns {
-    margin-top: 50%;
-  }
-}
-
 @media (max-height: 600px) {
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
     min-height: 1550px;
+  }
+}
+
+@media (max-width: 420px) {
+  .together-waves {
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 1750px;
   }
 }
 
@@ -288,7 +297,15 @@
     display: flex;
     background-image: url('../../assets/images/wavesResponsive.png');
     flex-direction: column;
-    height: 100px;
+    height: 100%;
+    
   }
+  .divLogoFooter {
+    margin-top: 100px;
+  }
+  .btns{
+    margin-top: 300px;
+  }
+
 
 }
