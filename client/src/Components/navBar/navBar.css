@@ -38,7 +38,8 @@
 
 @media (max-width: 360px){
     .navBar-container{
-        width: 110%;
+        width: 100%;
+        max-width: 100%;
     }
 
     .logo-container{
