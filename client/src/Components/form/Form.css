@@ -200,10 +200,10 @@
 
 @media (max-width: 620px) {
 
-  /* .together-waves {
+  .together-waves {
+    background-position: 0% 400%;
     background-image: url('../../assets/images/wavesResponsive.png');
-    background-position: 0% 100%;
-  } */
+  }
 
   .logoFooter {
     margin-top: -400px;
@@ -221,19 +221,23 @@
   }
 }
 
-/* @media (max-height: 600px) {
+@media (max-width: 720px){
   .together-waves {
-    background-position: 0% 120%;
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 1560px;
   }
-} */
+  .btns {
+    margin-top: 50%;
+  }
+}
 
-/* @media (max-width: 600px){
+@media (max-height: 600px) {
   .together-waves {
-    background-position: 0% -300%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 1550px;
   }
-} */
+}
+
 
 @media (max-width: 360px) {
 
@@ -281,11 +285,11 @@
 
 
 @media (max-width: 320px) {
-  /* .together-waves {
+  .together-waves {
     display: flex;
     background-image: url('../../assets/images/wavesResponsive.png');
     flex-direction: column;
     height: 100px;
-  } */
+  }
 
 }
