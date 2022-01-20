@@ -17,7 +17,7 @@
   min-height: 100%;
   min-width: 100%;
   height: 150vh;
-  max-width: 100%;
+  max-width: 100% !important;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,11 +25,10 @@
 
 .together-waves {
   background-image: url('../../assets/images/BarraDeColor.png');
-  background-position: 0% 100%;
+  background-position: center bottom;
   background-color: #e3dfde;
   background-repeat: no-repeat;
   background-size: contain;
-
 }
 
 .danger input {
@@ -201,10 +200,10 @@
 
 @media (max-width: 620px) {
 
-  .together-waves {
+  /* .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
     background-position: 0% 100%;
-  }
+  } */
 
   .logoFooter {
     margin-top: -400px;
@@ -222,11 +221,19 @@
   }
 }
 
-@media (max-height: 600px) {
+/* @media (max-height: 600px) {
   .together-waves {
     background-position: 0% 120%;
   }
-}
+} */
+
+/* @media (max-width: 600px){
+  .together-waves {
+    background-position: 0% -300%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+} */
 
 @media (max-width: 360px) {
 
@@ -236,10 +243,8 @@
   }
 
   .together-waves {
-    /* height: 200%; */
-    min-height: 1350px;
     background-image: url('../../assets/images/wavesResponsive.png');
-    /* background-position: 0% 1000%; */
+    min-height: 1550px;
   }
 
   .btns {
@@ -276,11 +281,11 @@
 
 
 @media (max-width: 320px) {
-  .together-waves {
+  /* .together-waves {
     display: flex;
     background-image: url('../../assets/images/wavesResponsive.png');
     flex-direction: column;
     height: 100px;
-  }
+  } */
 
 }
