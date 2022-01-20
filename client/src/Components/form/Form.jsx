@@ -15,7 +15,7 @@ const initialState = {
     inquery: "",
 };
 
-
+const { HEROKU_BACKEND } = process.env;
 
 export default function Form() {
     const [error, setError] = useState(initialState);
@@ -55,7 +55,7 @@ export default function Form() {
             city: input.city, whatsapp: input.whatsapp,
             inquery: input.inquery
         }
-        axios.post(`https://paradise15.herokuapp.com/sendMail/query`, form)
+        axios.post(`${HEROKU_BACKEND}/sendMail/query`, form)
             .then(response => {
                 console.log(response)
             })
@@ -173,16 +173,13 @@ export default function Form() {
                     </button>
                 </form>
             </div>
-                {/* <div className='ondaNaranja'>
-
-                </div> */}
-                {/*<img className='ondaNaranja' src={OndaNaranja} alt='img not found'/>
-                        <img className='ondaVerde' src={OndaVerde} alt='img not found'/>*/}
             <div className='btns'>
                 <img className='iconLeft' src={BotonIzquierda} alt='img not found'/>
                 <img className='iconRight' src={BotonDerecha} alt='img not found'/>
             </div>
+            <div className='btnMedium'>
                 <img className='iconMedium' src={BotonCentral} alt='img not found'/>
+            </div>
             </div>
             <div className='divLogoFooter'>
                 <img className='logoFooter' src="/images/LogoParadise.png" alt="img not found" />

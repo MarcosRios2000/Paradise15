@@ -1,13 +1,15 @@
 .carousel {
     display: flex;
     justify-content: center;
-    width:101.6%;
+    width:100%;
 }
 
 @media (max-width: 360px) {
     .carousel {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        height: 220px;
+        overflow: hidden;
     }
 }
 
@@ -19,7 +21,7 @@
 
 @media (max-height: 600px){
     .carousel {
-        height: 200px;
-        width: 80%;
+        width: 100%;
     }
 }
+
