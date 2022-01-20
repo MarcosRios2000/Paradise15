@@ -201,7 +201,6 @@
 @media (max-width: 620px) {
 
   .together-waves {
-    background-position: 0% 400%;
     background-image: url('../../assets/images/wavesResponsive.png');
   }
 
