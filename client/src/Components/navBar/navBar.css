@@ -1,6 +1,5 @@
 .navBar-container{
-    /* flex-direction: row;
-    flex-wrap: wrap; */
+    
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -16,26 +15,12 @@
     
 }
 
-@media (max-width: 360px){
-    .navBar-container{
-        width: 107.3%;
-    }
-}
-
 .menu-icon{
     position: absolute;
     margin-left: 20%;
     height: 20px;
     color: #004c80;
 }
-
-@media (max-width: 600px){
-    .menu-icon{
-        margin-left: -1%;
-    }
-}
-
-
 
 .logo-container{
     display: flex;
@@ -44,7 +29,18 @@
     height: 25px;
 }
 
+
+@media (max-width: 600px){
+    .menu-icon{
+        margin-left: -1%;
+    }
+}
+
 @media (max-width: 360px){
+    .navBar-container{
+        width: 110%;
+    }
+
     .logo-container{
         display: flex;
         justify-content: center;

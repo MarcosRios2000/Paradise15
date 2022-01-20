@@ -1,27 +1,27 @@
-.carousel {
+.carouselComponent {
     display: flex;
-    justify-content: center;
-    width:100%;
-}
-
-@media (max-width: 360px) {
-    .carousel {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        overflow: hidden;
-    }
+    justify-content: space-around;
+    width:107.3%;
 }
 
 @media (max-width: 700px){
-    .carousel {
+    .carouselComponent {
         width: 100%;
     }
 }
 
 @media (max-height: 600px){
-    .carousel {
+    .carouselComponent {
         width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .carouselComponent {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        width: 240%;
     }
 }
 
