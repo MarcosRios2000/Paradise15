@@ -20,6 +20,7 @@ export function Carousel() {
             <picture>
             <source srcSet={ImgResponsive1} media='(max-width: 360px)'/>
             <source className='imgResponsive600' srcSet={ImgResponsive1} media='(max-width: 600px)'/>
+            <source className='imgResponsive600' srcSet={ImgResponsive1} media='(max-width: 800px)'/>
             <img src={Img2} className="d-block w-100 " alt='img not found' />
             </picture>
           </div>
@@ -27,6 +28,7 @@ export function Carousel() {
             <picture>
             <source srcSet={ImgResponsive2} media='(max-width: 360px)' />
             <source className='imgResponsive600' srcSet={ImgResponsive2} media='(max-width: 600px)' />
+            <source className='imgResponsive600' srcSet={ImgResponsive2} media='(max-width: 800px)' />
             <img src={Img3} className="d-block w-100" alt='img not found' />
             </picture>
           </div>
