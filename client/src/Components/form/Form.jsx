@@ -180,9 +180,9 @@ export default function Form() {
 
             </div>
             
-            <div className='divLogoFooter'>
+            {/* <div className='divLogoFooter'>
                 <img className='logoFooter' src="/images/LogoParadise.png" alt="img not found" />
-            </div>
+            </div> */}
 
         </div>
     )

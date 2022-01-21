@@ -5,6 +5,16 @@
     size: cover;
 }
 
+@media (max-width: 800px){
+    .carouselComponent {
+        width: 100%;
+    }
+    .carousel, .carousel-item .active{
+        width: 100% !important;
+        object-fit: cover;
+    }
+}
+
 @media (max-width: 700px){
     .carouselComponent {
         width: 100%;
@@ -20,6 +30,7 @@
         object-fit: cover;
     }
 }
+
 
 @media (max-width: 360px){
     .carouselComponent {

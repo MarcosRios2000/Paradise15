@@ -202,12 +202,21 @@
   .btns img {
     margin-top: 90px;
   }
+
+}
+
+@media (max-width: 1400px){
+  .together-waves {
+    min-height: 1300px;
+    
+  }
 }
 
 @media (max-width: 800px) {
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2500px;
+    min-height: 2px;
+    
   }
   .btns img {
     margin-top: 300px;
@@ -217,10 +226,7 @@
 @media (max-width: 720px){
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2370px;
-  }
-  .btns {
-    margin-top: 50%;
+    min-height: 2750px;
   }
   .divLogoFooter img {
     margin-bottom: -150px;
@@ -290,7 +296,7 @@
 
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 1550px;
+    min-height: 1580px;
   }
 
   .btns {
@@ -341,6 +347,9 @@
   .btns{
     margin-top: 300px;
   }
+  .btns img {
+    min-width: 140px;
+  } 
 
 
 }
