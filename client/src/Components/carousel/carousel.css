@@ -11,9 +11,12 @@
     }
 }
 
-@media (max-height: 600px){
+@media (max-width: 600px){
     .carouselComponent {
-        min-width: 100%;
+        min-width: 100% !important;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
     }
 }
 

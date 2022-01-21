@@ -19,14 +19,12 @@ export function Carousel() {
           <div className="carousel-item active" data-bs-interval="3000" >
             <picture>
             <source srcSet={ImgResponsive1} media='(max-width: 360px)'/>
-            <source srcSet={ImgResponsive1} media='(max-width: 600px)'/>
             <img src={Img2} className="d-block w-100 " alt='img not found' />
             </picture>
           </div>
           <div className="carousel-item" data-bs-interval="3000" style={{overflow: 'hidden'}}>
             <picture>
-            <source srcSet={ImgResponsive2} media='(max-width: 360px)'/>
-            <source srcSet={ImgResponsive2} media='(max-width: 600px)'/>
+            <source srcSet={ImgResponsive2} media='(max-width: 360px)' />
             <img src={Img3} className="d-block w-100" alt='img not found' />
             </picture>
           </div>

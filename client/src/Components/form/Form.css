@@ -154,8 +154,8 @@
 .btns img {
   display: flex;
   align-items: center;
-  min-width: 100%;
-  min-height: 70%;
+  /* min-height: 50px; */
+  min-width: 288px;
   margin-top: 9%;
   margin-left: 20px;
   margin-right: 20px;
@@ -182,7 +182,6 @@
 
 .btnMedium img {
   margin-top: 10px;
-  min-height: 2%;
   min-width: 2%;
 }
 
@@ -203,10 +202,13 @@
 @media (max-width: 720px){
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 1560px;
+    min-height: 2370px;
   }
   .btns {
     margin-top: 50%;
+  }
+  .divLogoFooter img {
+    margin-bottom: -150px;
   }
 }
 
@@ -214,6 +216,7 @@
 
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 2100px;
   }
 
   .logoFooter {
@@ -222,20 +225,29 @@
 
   .btns img {
     margin-top: -5px;
-    min-height: 45px;
-    min-width: 150px;
+    min-width: 250px;
   }
 
   .btnMedium img {
-    height: 50px;
-    min-width: 140px;
+    width: 270px;
   }
 }
 
-@media (max-height: 600px) {
+@media (max-width: 600px) {
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 1550px;
+    min-height: 2050px;
+  }
+  .btns img {
+    min-width: 230px;
+  }
+
+  .btnMedium img {
+    width: 250px;
+  }
+  
+  .divLogoFooter img {
+    margin-bottom: -150px;
   }
 }
 
@@ -243,6 +255,13 @@
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
     min-height: 1750px;
+  }
+  .btns img {
+    min-width: 180px;
+  }
+
+  .btnMedium img {
+    width: 200px;
   }
 }
 
@@ -260,12 +279,11 @@
   }
 
   .btns {
-    margin-top: 35%;
+    margin-top: 50%;
   }
 
   .btns img {
-    min-height: 30px;
-    min-width: 120px;
+    min-width: 160px;
   }
 
   .logoFooter {
@@ -273,20 +291,22 @@
     height: 50px;
   }
 
+  .btnMedium img{
+    width: 180px;
+  }
+
   .iconLeft {
     margin-top: 0px;
     margin-right: 180px;
     margin-bottom: 0px;
-    height: 5%;
-    width: 40%
+    width: 120px;
   }
 
   .iconRight {
     margin-top: 40px;
     margin-left: 180px;
     margin-bottom: 0px;
-    height: 5%;
-    width: 40%;
+    width: 120px;
   }
 
 }
