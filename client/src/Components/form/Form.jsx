@@ -55,7 +55,7 @@ export default function Form() {
             city: input.city, whatsapp: input.whatsapp,
             inquery: input.inquery
         }
-        axios.post(`${HEROKU_BACKEND}/sendMail/query`, form)
+        axios.post(`https://paradise15.herokuapp.com/sendMail/query`, form)
             .then(response => {
                 console.log(response)
             })
