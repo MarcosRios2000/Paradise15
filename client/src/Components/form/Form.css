@@ -11,7 +11,7 @@
   max-height: 550 px;
 }
 
-.container {
+.containers {
   /* background-color: #e3dfde; */
 
   min-height: 100%;
@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 !important;
 }
 
 .together-waves {
@@ -29,6 +30,11 @@
   background-color: #e3dfde;
   background-repeat: no-repeat;
   background-size: contain;
+  padding: 0;
+}
+
+.body {
+  padding: none;
 }
 
 .danger input {
@@ -166,6 +172,8 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
+  /* position: relative;
+  display:block; */
 }
 
 .iconLeft {
@@ -190,14 +198,21 @@
   height: 50px;
 }
 
-.divLogoFooter {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+@media (max-width: 1920px){
+  .btns img {
+    margin-top: 90px;
+  }
 }
 
-
-
+@media (max-width: 800px) {
+  .together-waves {
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 2500px;
+  }
+  .btns img {
+    margin-top: 300px;
+  }
+}
 
 @media (max-width: 720px){
   .together-waves {
@@ -236,7 +251,7 @@
 @media (max-width: 600px) {
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2050px;
+    min-height: 2330px;
   }
   .btns img {
     min-width: 230px;
@@ -247,17 +262,17 @@
   }
   
   .divLogoFooter img {
-    margin-bottom: -150px;
+    margin-bottom: -1050px;
   }
 }
 
 @media (max-width: 420px) {
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 1750px;
+    min-height: 1630px;
   }
   .btns img {
-    min-width: 180px;
+    min-width: 165px;
   }
 
   .btnMedium img {

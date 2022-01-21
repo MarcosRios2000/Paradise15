@@ -79,7 +79,7 @@ export default function Form() {
 
         <div className="together-waves">
 
-            <div className="container">
+            <div className="containers">
 
                 <NavBar />
 

@@ -13,10 +13,11 @@
 
 @media (max-width: 600px){
     .carouselComponent {
-        min-width: 100% !important;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
+        width: 100%;
+    }
+    .carousel, .carousel-item .active{
+        width: 100% !important;
+        object-fit: cover;
     }
 }
 
