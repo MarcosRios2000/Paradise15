@@ -190,12 +190,18 @@ export default function Form() {
                 <img className='logoFooter' src="/images/LogoParadise.png" alt="img not found" />
             </div> */}
             <div className='divSocialIcons'>
-                <Link to= '/prueba'>
+                <Link to='/prueba'>
                     <img className='facebookIcon' src={Facebook} alt="img not found" />
                 </Link>
-                <img className='socialIcon' src={Instagram} alt='img not found' />
-                <img className='socialIcon' src={Whatsapp} alt='img not found' />
-                <img className='socialIcon' src={Youtube} alt='img not found' />
+                <Link to='/prueba2'>
+                    <img className='facebookIcon' src={Instagram} alt='img not found' />
+                </Link>
+                <Link to='/prueba3'>
+                    <img className='facebookIcon' src={Whatsapp} alt='img not found' />
+                </Link>
+                <Link to='/prueba4' >
+                    <img className="facebookIcon" src={Youtube} alt='img not found' />
+                </Link>
             </div>
             <div className='titleFooter'>
                 <strong style={{ color: 'white' }}>El viaje</strong>
