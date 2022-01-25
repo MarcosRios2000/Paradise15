@@ -5,6 +5,11 @@ import { Carousel } from '../carousel/carousel';
 import BotonIzquierda from '../../assets/images/Brasil.png';
 import BotonDerecha from '../../assets/images/Argentina.png';
 import BotonCentral from '../../assets/images/BtnCentral.png';
+import Facebook from '../../assets/images/facebook.png';
+import Instagram from '../../assets/images/instagram.png';
+import Whatsapp from '../../assets/images/whatsapp.png';
+import Youtube from '../../assets/images/youtube.png';
+
 import { NavBar } from '../navBar/navBar.jsx';
 
 
@@ -183,7 +188,37 @@ export default function Form() {
             {/* <div className='divLogoFooter'>
                 <img className='logoFooter' src="/images/LogoParadise.png" alt="img not found" />
             </div> */}
-
+            <div className='divSocialIcons'>
+                <img className='socialIcon' src={Facebook} alt="img not found" />
+                <img className='socialIcon' src={Instagram} alt='img not found'/>
+                <img className='socialIcon' src={Whatsapp} alt='img not found'/>
+                <img className='socialIcon' src={Youtube} alt='img not found'/>
+            </div>
+            <div className='titleFooter'>
+                <strong style={{color: 'white'}}>El viaje</strong>
+            </div>
+            <br/>
+            <div className='textFooter'>
+                <p style={{color: 'white'}}>El día a día</p>
+                <p style={{color: 'white'}}>Hoteles</p>
+                <p style={{color: 'white'}}>Paradise Chile</p>
+                <p style={{color: 'white'}}>Paradise Card</p>
+            </div>
+            {/* <div className='titleFooter'>
+                <strong style={{color: 'white'}}>El viaje</strong>
+            </div>
+            <div className='textFooter'>
+                <p style={{color: 'white'}}>El día a día</p>
+            </div>
+            <div className='textFooter2'>
+                <p style={{color: 'white'}}>Hoteles</p>
+            </div>
+            <div className='textFooter3'>
+                <p style={{color: 'white'}}>Paradise Chile</p>
+            </div>
+            <div className='textFooter4'>
+                <p style={{color: 'white'}}>Paradise Card</p>
+            </div> */}
         </div>
     )
 }
