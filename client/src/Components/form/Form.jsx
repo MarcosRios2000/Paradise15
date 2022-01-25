@@ -1,5 +1,6 @@
 import './Form.css';
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Carousel } from '../carousel/carousel';
 import BotonIzquierda from '../../assets/images/Brasil.png';
@@ -91,7 +92,7 @@ export default function Form() {
                 <Carousel />
 
                 <div className="paginaConstruccion">🚧 Página en construcción 🚧</div>
-                
+
                 <div className="formContainer">
                     <img className="logoSmall" src="/images/LogoParadiseSmall.png" alt="Logo" />
                     <form onSubmit={(error.inquery
@@ -184,25 +185,27 @@ export default function Form() {
                 </div>
 
             </div>
-            
+
             {/* <div className='divLogoFooter'>
                 <img className='logoFooter' src="/images/LogoParadise.png" alt="img not found" />
             </div> */}
             <div className='divSocialIcons'>
-                <img className='socialIcon' src={Facebook} alt="img not found" />
-                <img className='socialIcon' src={Instagram} alt='img not found'/>
-                <img className='socialIcon' src={Whatsapp} alt='img not found'/>
-                <img className='socialIcon' src={Youtube} alt='img not found'/>
+                <Link to= '/prueba'>
+                    <img className='facebookIcon' src={Facebook} alt="img not found" />
+                </Link>
+                <img className='socialIcon' src={Instagram} alt='img not found' />
+                <img className='socialIcon' src={Whatsapp} alt='img not found' />
+                <img className='socialIcon' src={Youtube} alt='img not found' />
             </div>
             <div className='titleFooter'>
-                <strong style={{color: 'white'}}>El viaje</strong>
+                <strong style={{ color: 'white' }}>El viaje</strong>
             </div>
-            <br/>
+            <br />
             <div className='textFooter'>
-                <p style={{color: 'white'}}>El día a día</p>
-                <p style={{color: 'white'}}>Hoteles</p>
-                <p style={{color: 'white'}}>Paradise Chile</p>
-                <p style={{color: 'white'}}>Paradise Card</p>
+                <p style={{ color: 'white' }}>El día a día</p>
+                <p style={{ color: 'white' }}>Hoteles</p>
+                <p style={{ color: 'white' }}>Paradise Chile</p>
+                <p style={{ color: 'white' }}>Paradise Card</p>
             </div>
             {/* <div className='titleFooter'>
                 <strong style={{color: 'white'}}>El viaje</strong>
