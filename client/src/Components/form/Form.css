@@ -1,6 +1,25 @@
-.facebookIcon {
-width: 50%;
+.together-waves {
+  background-image: url('../../assets/images/BarraDeColor.png');
+  background-position: center bottom;
+  background-color: #e3dfde;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
+
+/* .containers {
+  background-color: #e3dfde;
+
+  height: 180vh;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100% !important;
+  padding: 0 !important;
+} */
 
 .formContainer {
   display: flex;
@@ -11,33 +30,9 @@ width: 50%;
   border-radius: 8px;
   min-width: 320px;
   max-height: 550px;
+  margin: 5%;
 }
 
-.containers {
-  /* background-color: #e3dfde; */
-
-  min-height: 100%;
-  min-width: 100%;
-  height: 180vh;
-  max-width: 100% !important;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 !important;
-}
-
-.together-waves {
-  background-image: url('../../assets/images/BarraDeColor.png');
-  background-position: center bottom;
-  background-color: #e3dfde;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 0;
-}
-
-.body {
-  padding: none;
-}
 
 .danger input {
   border: 1px solid red;
@@ -104,12 +99,6 @@ width: 50%;
   margin-top: 5px;
 }
 
-.logo {
-  margin: auto;
-  height: 38px;
-  margin-top: 10px;
-}
-
 .paginaConstruccion {
   margin-top: 40px;
   margin-bottom: 15px;
@@ -153,82 +142,129 @@ width: 50%;
 
 .btns {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  max-width: 15%;
   align-items: center;
-  margin-top: 360px;
 }
 
-.btns img {
+.minibtns {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+/* .btns img {
   display: flex;
   align-items: center;
-  /* min-height: 50px; */
+  min-height: 50px; 
   min-width: 288px;
-  margin-top: 9%;
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
-.divLogoFooter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-  /* position: relative;
-  display:block; */
-}
+} */
 
 .iconLeft {
   display: flex;
+  overflow: hidden;
+  max-width: 45%;
+
 }
+
+.iconLeft:hover {
+  animation: 1s infinite tada;
+
+}
+
+/* 
+@keyframes slideinLeft {
+  from {
+    margin-right: 5%;
+    width: 50%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 50%
+  }
+} */
 
 .iconRight {
   display: flex;
+  animation-duration: 2s;
+  overflow: hidden;
+  max-width: 45%;
 }
 
-.iconMedium {
-  display: flex
+.iconRight:hover {
+  animation: 1s infinite tada;
+
 }
 
-.btnMedium img {
-  margin-top: 10px;
+/* 
+@keyframes slideinRight {
+  from {
+    margin-left: 5%;
+    width: 50%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+} */
+
+
+
+.btnMedium {
+
   min-width: 2%;
+  overflow: hidden;
+  animation-duration: 2s;
 }
 
-.logoFooter {
-  margin-top: -50px;
-  height: 50px;
+.btnMedium:hover {
+  animation: 1s infinite tada;
+
 }
 
-.divSocialIcons{
+.divSocialIcons {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
+
 }
 
-.socialIcon {
-  margin-bottom: 10%;
-  width: 5%;
+.facebookIcon {
+  width: 40%;
 }
 
 .titleFooter {
   text-align: start;
 }
 
-.textFooter {
-  text-align: start;
+
+.footerDivGroup {
+  display: flex;
+  justify-content: end;
+
 }
 
-@media (max-width: 1920px){
+.footerDiv {
+  margin-right: 10%;
+  justify-content: flex-end;
+}
+
+
+
+/* @media (max-width: 1920px) {
   .btns img {
     margin-top: 90px;
   }
 
-}
+} */
 
-@media (max-width: 1400px){
+@media (max-width: 1400px) {
   .together-waves {
     min-height: 1300px;
-    
+
   }
 }
 
@@ -236,18 +272,20 @@ width: 50%;
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
     min-height: 2px;
-    
+
   }
+
   .btns img {
     margin-top: 300px;
   }
 }
 
-@media (max-width: 720px){
+@media (max-width: 720px) {
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
     min-height: 2750px;
   }
+
   .divLogoFooter img {
     margin-bottom: -150px;
   }
@@ -269,16 +307,19 @@ width: 50%;
     min-width: 250px;
   }
 
-  .btnMedium img {
+  .btnMedium {
     width: 270px;
   }
 }
+
+
 
 @media (max-width: 600px) {
   .together-waves {
     background-image: url('../../assets/images/wavesResponsive.png');
     min-height: 2330px;
   }
+
   .btns img {
     min-width: 230px;
   }
@@ -286,10 +327,7 @@ width: 50%;
   .btnMedium img {
     width: 250px;
   }
-  
-  .divLogoFooter img {
-    margin-bottom: -1050px;
-  }
+
 }
 
 @media (max-width: 420px) {
@@ -297,6 +335,7 @@ width: 50%;
     background-image: url('../../assets/images/wavesResponsive.png');
     min-height: 1630px;
   }
+
   .btns img {
     min-width: 165px;
   }
@@ -332,7 +371,7 @@ width: 50%;
     height: 50px;
   }
 
-  .btnMedium img{
+  .btnMedium img {
     width: 180px;
   }
 
@@ -359,17 +398,20 @@ width: 50%;
     background-image: url('../../assets/images/wavesResponsive.png');
     flex-direction: column;
     height: 100%;
-    
+
   }
+
   .divLogoFooter {
     margin-top: 100px;
   }
-  .btns{
+
+  .btns {
     margin-top: 300px;
   }
+
   .btns img {
     min-width: 140px;
-  } 
+  }
 
 
 }
