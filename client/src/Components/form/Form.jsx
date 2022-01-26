@@ -185,70 +185,80 @@ export default function Form() {
 
 
 
-            <footer className='footerPadre'>
+            <footer className='footerDivGroup'>
 
-                <div className="footerDivGroup">
-
-                    <div className="footerDiv">
-                        <Link to='/prueba'>
-                            <strong style={{ color: 'white' }}>El viaje</strong>
-                        </Link >
-                        <p style={{ color: 'white' }}>El día a día</p>
-                        <p style={{ color: 'white' }}>Hoteles</p>
-                        <p style={{ color: 'white' }}>Paradise Chile</p>
-                        <p style={{ color: 'white' }}>Paradise Card</p>
-
-                    </div>
-                    <div className="footerDiv">
-                        <Link to='/prueba' className='titleFooter'>
-                            <strong style={{ color: 'white' }}>El viaje</strong>
-                        </Link >
-
-                        <p style={{ color: 'white' }}>El día a día</p>
-                        <p style={{ color: 'white' }}>Hoteles</p>
-                        <p style={{ color: 'white' }}>Paradise Chile</p>
-                        <p style={{ color: 'white' }}>Paradise Card</p>
-
-                    </div>
-                    <div className="footerDiv">
-                        <Link to='/prueba' className='titleFooter'>
-                            <strong style={{ color: 'white' }}>El viaje</strong>
-                        </Link >
-
-                        <p style={{ color: 'white' }}>El día a día</p>
-                        <p style={{ color: 'white' }}>Hoteles</p>
-                        <p style={{ color: 'white' }}>Paradise Chile</p>
-                        <p style={{ color: 'white' }}>Paradise Card</p>
-
-                    </div>
-                    <div className="footerDiv">
-                        <Link to='/prueba' className='titleFooter'>
-                            <strong style={{ color: 'white' }}>El viaje</strong>
-                        </Link >
-
-                        <p style={{ color: 'white' }}>El día a día</p>
-                        <p style={{ color: 'white' }}>Hoteles</p>
-                        <p style={{ color: 'white' }}>Paradise Chile</p>
-                        <p style={{ color: 'white' }}>Paradise Card</p>
-
-                    </div>
-                    <div className='divSocialIcons'>
-
-                        <Link to='/prueba'>
-                            <img className='facebookIcon' src={Facebook} alt="img not found" />
-                        </Link>
-                        <Link to='/prueba2'>
-                            <img className='facebookIcon' src={Instagram} alt='img not found' />
-                        </Link>
-                        <Link to='/prueba3'>
-                            <img className='facebookIcon' src={Whatsapp} alt='img not found' />
-                        </Link>
-                        <Link to='/prueba4' >
-                            <img className="facebookIcon" src={Youtube} alt='img not found' />
-                        </Link>
-                    </div>
+                <div className="footerDiv">
+                    <Link to='/prueba'>
+                        <strong style={{ color: 'white' }}>El viaje</strong>
+                    </Link >
+                    <p style={{ color: 'white' }}>El día a día</p>
+                    <p style={{ color: 'white' }}>Hoteles</p>
+                    <p style={{ color: 'white' }}>Paradise Chile</p>
+                    <p style={{ color: 'white' }}>Paradise Card</p>
 
                 </div>
+                <div className="footerDiv">
+                    <Link to='/prueba' className='titleFooter'>
+                        <strong style={{ color: 'white' }}>El viaje</strong>
+                    </Link >
+
+                    <p style={{ color: 'white' }}>El día a día</p>
+                    <p style={{ color: 'white' }}>Hoteles</p>
+                    <p style={{ color: 'white' }}>Paradise Chile</p>
+                    <p style={{ color: 'white' }}>Paradise Card</p>
+
+                </div>
+                <div className="footerDiv">
+                    <Link to='/prueba' className='titleFooter'>
+                        <strong style={{ color: 'white' }}>El viaje</strong>
+                    </Link >
+
+                    <p style={{ color: 'white' }}>El día a día</p>
+                    <p style={{ color: 'white' }}>Hoteles</p>
+                    <p style={{ color: 'white' }}>Paradise Chile</p>
+                    <p style={{ color: 'white' }}>Paradise Card</p>
+
+                </div>
+                <div className="footerDiv">
+                    <Link to='/prueba' className='titleFooter'>
+                        <strong style={{ color: 'white' }}>El viaje</strong>
+                    </Link >
+
+                    <p style={{ color: 'white' }}>El día a día</p>
+                    <p style={{ color: 'white' }}>Hoteles</p>
+                    <p style={{ color: 'white' }}>Paradise Chile</p>
+                    <p style={{ color: 'white' }}>Paradise Card</p>
+
+                </div>
+                <div className='divSocialIcons'>
+
+                    <Link to='/prueba'>
+                        <div className='icono'>
+                        <img className='facebookIcon' src={Facebook} alt="img not found" />
+                        <p className="txtFacebook">Facebook</p>
+                        </div>
+                    </Link>
+                    <Link to='/prueba2'>
+                        <div className="icono">
+                        <img className='facebookIcon' src={Instagram} alt='img not found' />
+                        <p className="txtInstagram">Instagram</p>
+                        </div>
+                    </Link>
+                    <Link to='/prueba3'>
+                        <div className="icono">
+                        <img className='facebookIcon' src={Whatsapp} alt='img not found' />
+                        <p className="txtWhatsapp">Whatsapp</p>
+                        </div>
+                    </Link>
+                    <Link to='/prueba4' >
+                        <div className="icono">
+                        <img className="facebookIcon" src={Youtube} alt='img not found' />
+                        <p className="txtYouTube">YouTube</p>
+                        </div>
+                    </Link>
+                </div>
+
+
             </footer>
         </div>
     )

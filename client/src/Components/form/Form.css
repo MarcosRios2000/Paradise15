@@ -6,7 +6,6 @@
   background-size: contain;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
 
 }
@@ -24,13 +23,17 @@
 .formContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: #004c80;
   color: seashell;
   border-radius: 8px;
   min-width: 320px;
   max-height: 550px;
-  margin: 5%;
+  max-width: 350px;
+  margin-bottom: auto;
+ 
+  
 }
 
 
@@ -227,9 +230,10 @@
 
 .divSocialIcons {
   display: flex;
-  flex-direction: column;
-  justify-content: end;
 
+}
+.icono:hover {
+  animation: 1s infinite tada;
 }
 
 .facebookIcon {
@@ -243,13 +247,14 @@
 
 .footerDivGroup {
   display: flex;
-  justify-content: end;
+  justify-content: center;
+  margin-top: auto;
+
 
 }
 
 .footerDiv {
-  margin-right: 10%;
-  justify-content: flex-end;
+  align-self: flex-end;
 }
 
 
