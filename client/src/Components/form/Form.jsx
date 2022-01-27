@@ -82,184 +82,195 @@ export default function Form() {
     };
 
     return (
+        <div className="containerPadre">
 
-        <div className="together-waves">
 
-            <NavBar />
 
-            <Carousel />
+            <div className="together-waves">
 
-            <div className="paginaConstruccion">🚧 Página en construcción 🚧</div>
+                <NavBar />
 
-            <div className="formContainer">
-                <img className="logoSmall" src="/images/LogoParadiseSmall.png" alt="Logo" />
-                <form onSubmit={(error.inquery
-                    || error.completeName
-                    || error.city
-                    || error.whatsapp)
-                    || (input.inquery.length === 0
-                        || input.completeName.length === 0
-                        || input.city.length === 0
-                        || input.whatsapp.length === 0) ? handleSubmitDsabled : handleSubmit}>
-                    <div>Envianos tu consulta</div>
-                    <div className={`inputContainer ${error.completeName ? "danger" : ""}`}>
-                        <label className='titulos'>Nombre y Apellido:</label>
-                        <input
-                            onChange={(e) => {
-                                handleInputChange(e);
-                                validateInput(e);
-                            }}
-                            type="text"
-                            id="completeName"
-                            name="completeName"
-                            value={input.completeName}
-                            className={error && "danger"}
-                        />
-                        <span className="error">{error?.completeName}</span>
-                    </div>
-                    <div className={`inputContainer ${error.city ? "danger" : ""}`}>
-                        <label>Ciudad:</label>
-                        <input
-                            onChange={(e) => {
-                                handleInputChange(e);
-                                validateInput(e);
-                            }}
-                            type="text"
-                            name="city"
-                            value={input.city}
-                            className={error && "danger"}
-                        />
-                        <span className="error">{error?.city}</span>
-                    </div>
-                    <div className={`inputContainer ${error.whatsapp ? "danger" : ""}`}>
-                        <label>Whatsapp:</label>
-                        <input
-                            onChange={(e) => {
-                                handleInputChange(e);
-                                validateInput(e);
-                            }}
-                            type="text"
-                            name="whatsapp"
-                            value={input.whatsapp}
-                            className={error && "danger"}
-                        />
-                        <span className="error">{error?.whatsapp}</span>
-                    </div>
-                    <div className={`inputContainerInquery ${error.inquery ? "danger" : ""}`}>
-                        <label>Consulta:</label>
-                        <textarea
-                            onChange={(e) => {
-                                handleInputChange(e);
-                                validateInput(e);
-                            }}
-                            type="text"
-                            name="inquery"
-                            value={input.inquery}
-                            className={error && "danger"}>
-                        </textarea>
-                        <span className="error">{error?.inquery}</span>
-                    </div>
-                    <button className={`button ${(error.inquery
+                <Carousel />
+
+                <div className="paginaConstruccion">🚧 Página en construcción 🚧</div>
+
+                <div className="formContainer">
+                    <img className="logoSmall" src="/images/LogoParadiseSmall.png" alt="Logo" />
+                    <form onSubmit={(error.inquery
                         || error.completeName
                         || error.city
                         || error.whatsapp)
                         || (input.inquery.length === 0
                             || input.completeName.length === 0
                             || input.city.length === 0
-                            || input.whatsapp.length === 0)
-                        ? "buttonDanger" : ""}`} type="submit">
-                        Enviar
-                    </button>
-                </form>
+                            || input.whatsapp.length === 0) ? handleSubmitDsabled : handleSubmit}>
+                        <div>Envianos tu consulta</div>
+                        <div className={`inputContainer ${error.completeName ? "danger" : ""}`}>
+                            <label className='titulos'>Nombre y Apellido:</label>
+                            <input
+                                onChange={(e) => {
+                                    handleInputChange(e);
+                                    validateInput(e);
+                                }}
+                                type="text"
+                                id="completeName"
+                                name="completeName"
+                                value={input.completeName}
+                                className={error && "danger"}
+                            />
+                            <span className="error">{error?.completeName}</span>
+                        </div>
+                        <div className={`inputContainer ${error.city ? "danger" : ""}`}>
+                            <label>Ciudad:</label>
+                            <input
+                                onChange={(e) => {
+                                    handleInputChange(e);
+                                    validateInput(e);
+                                }}
+                                type="text"
+                                name="city"
+                                value={input.city}
+                                className={error && "danger"}
+                            />
+                            <span className="error">{error?.city}</span>
+                        </div>
+                        <div className={`inputContainer ${error.whatsapp ? "danger" : ""}`}>
+                            <label>Whatsapp:</label>
+                            <input
+                                onChange={(e) => {
+                                    handleInputChange(e);
+                                    validateInput(e);
+                                }}
+                                type="text"
+                                name="whatsapp"
+                                value={input.whatsapp}
+                                className={error && "danger"}
+                            />
+                            <span className="error">{error?.whatsapp}</span>
+                        </div>
+                        <div className={`inputContainerInquery ${error.inquery ? "danger" : ""}`}>
+                            <label>Consulta:</label>
+                            <textarea
+                                onChange={(e) => {
+                                    handleInputChange(e);
+                                    validateInput(e);
+                                }}
+                                type="text"
+                                name="inquery"
+                                value={input.inquery}
+                                className={error && "danger"}>
+                            </textarea>
+                            <span className="error">{error?.inquery}</span>
+                        </div>
+                        <button className={`button ${(error.inquery
+                            || error.completeName
+                            || error.city
+                            || error.whatsapp)
+                            || (input.inquery.length === 0
+                                || input.completeName.length === 0
+                                || input.city.length === 0
+                                || input.whatsapp.length === 0)
+                            ? "buttonDanger" : ""}`} type="submit">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+                <div className='btns'>
+                    <div className='minibtns' >
+                        <img className='iconLeft' src={BotonIzquierda} alt='img not found' />
+                        <img className='iconRight' src={BotonDerecha} alt='img not found' />
+                    </div>
+                    <div className='btnMedium'>
+                        <img src={BotonCentral} alt='img not found' />
+                    </div>
+
+                </div>
+
+
+
+                <footer className='footerDivGroup'>
+
+                    <div className='divSocialIcons'>
+
+                        <Link to='/prueba'>
+                            <div className='icono'>
+                                <img className='facebookIcon' src={Facebook} alt="img not found" />
+                                <p className="txtFacebook">Facebook</p>
+                            </div>
+                        </Link>
+                        <Link to='/prueba2'>
+                            <div className="icono">
+                                <img className='facebookIcon' src={Instagram} alt='img not found' />
+                                <p className="txtInstagram">Instagram</p>
+                            </div>
+                        </Link>
+                        <Link to='/prueba3'>
+                            <div className="icono">
+                                <img className='facebookIcon' src={Whatsapp} alt='img not found' />
+                                <p className="txtWhatsapp">Whatsapp</p>
+                            </div>
+                        </Link>
+                        <Link to='/prueba4' >
+                            <div className="icono">
+                                <img className="facebookIcon" src={Youtube} alt='img not found' />
+                                <p className="txtYouTube">YouTube</p>
+                            </div>
+                        </Link>
+                    </div>
+                    
+                    <div className="footerTexts">
+
+
+                        <div className="footerDiv">
+                            <Link to='/prueba'>
+                                <strong style={{ color: 'white' }}>El viaje</strong>
+                            </Link >
+                            <p style={{ color: 'white' }}>El día a día</p>
+                            <p style={{ color: 'white' }}>Hoteles</p>
+                            <p style={{ color: 'white' }}>Paradise Chile</p>
+                            <p style={{ color: 'white' }}>Paradise Card</p>
+
+                        </div>
+                        <div className="footerDiv">
+                            <Link to='/prueba' className='titleFooter'>
+                                <strong style={{ color: 'white' }}>El viaje</strong>
+                            </Link >
+
+                            <p style={{ color: 'white' }}>El día a día</p>
+                            <p style={{ color: 'white' }}>Hoteles</p>
+                            <p style={{ color: 'white' }}>Paradise Chile</p>
+                            <p style={{ color: 'white' }}>Paradise Card</p>
+
+                        </div>
+                        <div className="footerDiv">
+                            <Link to='/prueba' className='titleFooter'>
+                                <strong style={{ color: 'white' }}>El viaje</strong>
+                            </Link >
+
+                            <p style={{ color: 'white' }}>El día a día</p>
+                            <p style={{ color: 'white' }}>Hoteles</p>
+                            <p style={{ color: 'white' }}>Paradise Chile</p>
+                            <p style={{ color: 'white' }}>Paradise Card</p>
+
+                        </div>
+                        <div className="footerDiv">
+                            <Link to='/prueba' className='titleFooter'>
+                                <strong style={{ color: 'white' }}>El viaje</strong>
+                            </Link >
+
+                            <p style={{ color: 'white' }}>El día a día</p>
+                            <p style={{ color: 'white' }}>Hoteles</p>
+                            <p style={{ color: 'white' }}>Paradise Chile</p>
+                            <p style={{ color: 'white' }}>Paradise Card</p>
+
+                        </div>
+                    </div>
+
+
+
+
+                </footer>
             </div>
-            <div className='btns'>
-                <div className='minibtns' >
-                    <img className='iconLeft' src={BotonIzquierda} alt='img not found' />
-                    <img className='iconRight' src={BotonDerecha} alt='img not found' />
-                </div>
-                <div className='btnMedium'>
-                    <img src={BotonCentral} alt='img not found' />
-                </div>
-
-            </div>
-
-
-
-            <footer className='footerDivGroup'>
-
-                <div className="footerDiv">
-                    <Link to='/prueba'>
-                        <strong style={{ color: 'white' }}>El viaje</strong>
-                    </Link >
-                    <p style={{ color: 'white' }}>El día a día</p>
-                    <p style={{ color: 'white' }}>Hoteles</p>
-                    <p style={{ color: 'white' }}>Paradise Chile</p>
-                    <p style={{ color: 'white' }}>Paradise Card</p>
-
-                </div>
-                <div className="footerDiv">
-                    <Link to='/prueba' className='titleFooter'>
-                        <strong style={{ color: 'white' }}>El viaje</strong>
-                    </Link >
-
-                    <p style={{ color: 'white' }}>El día a día</p>
-                    <p style={{ color: 'white' }}>Hoteles</p>
-                    <p style={{ color: 'white' }}>Paradise Chile</p>
-                    <p style={{ color: 'white' }}>Paradise Card</p>
-
-                </div>
-                <div className="footerDiv">
-                    <Link to='/prueba' className='titleFooter'>
-                        <strong style={{ color: 'white' }}>El viaje</strong>
-                    </Link >
-
-                    <p style={{ color: 'white' }}>El día a día</p>
-                    <p style={{ color: 'white' }}>Hoteles</p>
-                    <p style={{ color: 'white' }}>Paradise Chile</p>
-                    <p style={{ color: 'white' }}>Paradise Card</p>
-
-                </div>
-                <div className="footerDiv">
-                    <Link to='/prueba' className='titleFooter'>
-                        <strong style={{ color: 'white' }}>El viaje</strong>
-                    </Link >
-
-                    <p style={{ color: 'white' }}>El día a día</p>
-                    <p style={{ color: 'white' }}>Hoteles</p>
-                    <p style={{ color: 'white' }}>Paradise Chile</p>
-                    <p style={{ color: 'white' }}>Paradise Card</p>
-
-                </div>
-                <div className='divSocialIcons'>
-
-                    <Link to='/prueba'>
-                        <div className='icono'>
-                        <img className='facebookIcon' src={Facebook} alt="img not found" />
-                        <p className="txtFacebook">Facebook</p>
-                        </div>
-                    </Link>
-                    <Link to='/prueba2'>
-                        <div className="icono">
-                        <img className='facebookIcon' src={Instagram} alt='img not found' />
-                        <p className="txtInstagram">Instagram</p>
-                        </div>
-                    </Link>
-                    <Link to='/prueba3'>
-                        <div className="icono">
-                        <img className='facebookIcon' src={Whatsapp} alt='img not found' />
-                        <p className="txtWhatsapp">Whatsapp</p>
-                        </div>
-                    </Link>
-                    <Link to='/prueba4' >
-                        <div className="icono">
-                        <img className="facebookIcon" src={Youtube} alt='img not found' />
-                        <p className="txtYouTube">YouTube</p>
-                        </div>
-                    </Link>
-                </div>
-
-
-            </footer>
         </div>
     )
 }

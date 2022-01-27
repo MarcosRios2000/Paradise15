@@ -1,3 +1,10 @@
+.containerPadre {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .together-waves {
   background-image: url('../../assets/images/BarraDeColor.png');
   background-position: center bottom;
@@ -7,18 +14,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 1000px;
 
 }
 
-/* .containers {
-  background-color: #e3dfde;
-
-  height: 180vh;
-  min-height: 100%;
-  min-width: 100%;
-  max-width: 100% !important;
-  padding: 0 !important;
-} */
 
 .formContainer {
   display: flex;
@@ -31,9 +30,9 @@
   min-width: 320px;
   max-height: 550px;
   max-width: 350px;
-  margin-bottom: auto;
- 
-  
+  margin: auto;
+
+
 }
 
 
@@ -156,13 +155,6 @@
 
 }
 
-/* .btns img {
-  display: flex;
-  align-items: center;
-  min-height: 50px; 
-  min-width: 288px;
-
-} */
 
 .iconLeft {
   display: flex;
@@ -176,18 +168,6 @@
 
 }
 
-/* 
-@keyframes slideinLeft {
-  from {
-    margin-right: 5%;
-    width: 50%;
-  }
-
-  to {
-    margin-right: 0%;
-    width: 50%
-  }
-} */
 
 .iconRight {
   display: flex;
@@ -200,21 +180,6 @@
   animation: 1s infinite tada;
 
 }
-
-/* 
-@keyframes slideinRight {
-  from {
-    margin-left: 5%;
-    width: 50%
-  }
-
-  to {
-    margin-left: 0%;
-    width: 50%;
-  }
-} */
-
-
 
 .btnMedium {
 
@@ -232,6 +197,7 @@
   display: flex;
 
 }
+
 .icono:hover {
   animation: 1s infinite tada;
 }
@@ -247,99 +213,59 @@
 
 .footerDivGroup {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: auto;
+  align-items: center;
+  margin: auto;
 
 
 }
 
 .footerDiv {
+  display: flex;
   align-self: flex-end;
+}
+
+.footerDiv>p {
+  margin: 0;
 }
 
 
 
-/* @media (max-width: 1920px) {
-  .btns img {
-    margin-top: 90px;
-  }
 
-} */
-
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .together-waves {
     min-height: 1300px;
 
   }
 }
 
-@media (max-width: 800px) {
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2px;
+@media (max-width: 992px) {
 
+  .together-waves { 
+    background-size: contain;
   }
 
-  .btns img {
-    margin-top: 300px;
-  }
-}
-
-@media (max-width: 720px) {
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2750px;
+  .minibtns {
+    margin: 10% auto;
   }
 
-  .divLogoFooter img {
-    margin-bottom: -150px;
-  }
-}
 
-@media (max-width: 620px) {
-
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2100px;
+  .footerTexts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .logoFooter {
-    margin-top: -400px;
-  }
-
-  .btns img {
-    margin-top: -5px;
-    min-width: 250px;
-  }
-
-  .btnMedium {
-    width: 270px;
-  }
-}
-
-
-
-@media (max-width: 600px) {
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2330px;
-  }
-
-  .btns img {
-    min-width: 230px;
-  }
-
-  .btnMedium img {
-    width: 250px;
+  .footerDivGroup {
+    display: flex;
+    justify-content: center;
   }
 
 }
 
-@media (max-width: 420px) {
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 1630px;
-  }
+
+@media (max-width: 768px) {
 
   .btns img {
     min-width: 165px;
@@ -351,36 +277,35 @@
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
 
-  .container {
-    height: 1000px;
-    max-width: 100%;
-  }
-
-  .together-waves {
+  .together-waves{
     background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 1580px;
+    background-position: bottom;
+    min-height: 2000px;
+    
+  }
+  .formContainer{
+    margin: 0;
+  }
+  .footerDivGroup{
+    margin: auto;
+  }
+  .footerTexts {
+    display: flex;
+    flex-direction: column;
   }
 
-  .btns {
-    margin-top: 50%;
-  }
 
-  .btns img {
-    min-width: 160px;
-  }
-
-  .logoFooter {
-    margin-top: -290px;
-    height: 50px;
-  }
-
+/*   
   .btnMedium img {
-    width: 180px;
-  }
-
-  .iconLeft {
+    width: 130px;
+  } */
+  
+  /* .btns img {
+    min-width: 160px;
+  } */
+  /* .iconLeft {
     margin-top: 0px;
     margin-right: 180px;
     margin-bottom: 0px;
@@ -392,12 +317,12 @@
     margin-left: 180px;
     margin-bottom: 0px;
     width: 120px;
-  }
+  } */
 
 }
 
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .together-waves {
     display: flex;
     background-image: url('../../assets/images/wavesResponsive.png');
@@ -419,4 +344,54 @@
   }
 
 
-}
+} */
+
+/* @media (max-width: 720px) {
+  .together-waves {
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 2750px;
+  }
+
+  .divLogoFooter img {
+    margin-bottom: -150px;
+  }
+} */
+
+/* @media (max-width: 620px) {
+
+  .together-waves {
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 2100px;
+  }
+
+  .logoFooter {
+    margin-top: -400px;
+  }
+
+  .btns img {
+    margin-top: -5px;
+    min-width: 250px;
+  }
+
+  .btnMedium {
+    width: 270px;
+  }
+} */
+
+
+
+/* @media (max-width: 600px) {
+  .together-waves {
+    background-image: url('../../assets/images/wavesResponsive.png');
+    min-height: 2330px;
+  }
+
+  .btns img {
+    min-width: 230px;
+  }
+
+  .btnMedium img {
+    width: 250px;
+  }
+
+} */
