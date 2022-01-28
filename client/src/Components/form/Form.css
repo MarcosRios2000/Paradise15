@@ -1,5 +1,6 @@
 .containerPadre {
-  background-color: rgba(0, 0, 0, 0.884) ;
+  /* background-color: rgba(0, 0, 0, 0.884) ; */
+  background: linear-gradient(0deg, #e3dfde 90%, #24242c 10%);
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,7 +12,6 @@
 .together-waves {
   background-image: url('../../assets/images/BarraDeColor.png');
   background-position: center bottom;
-  background-color: #e3dfde;
   background-repeat: no-repeat;
   background-size: contain;
   display: flex;
@@ -349,6 +349,29 @@
   } */
 
 
+  @media (max-width: 1100px){
+    .btns{
+      margin-top: 900px;
+    }
+  }
+
+
+  @media (max-width: 850px){
+    .together-waves {
+      display:flex;
+      min-height: 2400px;
+      width: 100%;
+      background-image: url('../../assets/images/wavesResponsive.png');
+    }
+    .formContainer{
+      position: relative;
+    }
+    .footerDivGroup {
+      margin-top: -800px;
+    }
+    .btns {
+    }
+  }
 
   @media (max-width: 700px){
     .formContainer {
@@ -363,132 +386,42 @@
     }
 
     .together-waves {
-      min-height: 1500px;
+      display:flex;
+      min-height: 1600px;
       width: 100%;
+      background-image: url('../../assets/images/wavesResponsive.png');
     }
     
     .containerPadre {
+      display: flex;
       height: 100%;
     }
 
     .icono{
-      /* width: 20px; */
     }
 
     .btns {
-      width: 320px;
+      width: 100%;
       margin-bottom: -50px;
-      background-image: url('../../assets/images/wavesResponsive.png');
       background-repeat: no-repeat;
       background-size: contain;
       padding-top: 80px;
-      padding-bottom: 60px;
+      margin-top: -16px;
+      padding-bottom: 10px;
 
     }
 
     .footerDivGroup{
-      margin-bottom: -40px;
-      background-color: black;
       width: 100%;
     }
   }
 
-
-/*   
-  .btnMedium img {
-    width: 130px;
-  } */
-  
-  /* .btns img {
-    min-width: 160px;
-  } */
-  /* .iconLeft {
-    margin-top: 0px;
-    margin-right: 180px;
-    margin-bottom: 0px;
-    width: 120px;
-  }
-
-  .iconRight {
-    margin-top: 40px;
-    margin-left: 180px;
-    margin-bottom: 0px;
-    width: 120px;
-  } */
-
-
-
-
-/* @media (max-width: 320px) {
-  .together-waves {
-    display: flex;
-    background-image: url('../../assets/images/wavesResponsive.png');
-    flex-direction: column;
-    height: 100%;
-
-  }
-
-  .divLogoFooter {
-    margin-top: 100px;
-  }
-
+@media (max-width: 360px){
   .btns {
-    margin-top: 300px;
+    margin-top: 120px;
   }
 
-  .btns img {
-    min-width: 140px;
+  .footerDivGroup{
+    margin-top: 70px;
   }
-
-
-} */
-
-/* @media (max-width: 720px) {
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2750px;
-  }
-
-  .divLogoFooter img {
-    margin-bottom: -150px;
-  }
-} */
-
-/* @media (max-width: 620px) {
-
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2100px;
-  }
-
-  .logoFooter {
-    margin-top: -400px;
-  }
-
-  .btns img {
-    margin-top: -5px;
-    min-width: 250px;
-  }
-
-  .btnMedium {
-    width: 270px;
-  }
-} */
-
-
-
-/* @media (max-width: 600px) {
-  .together-waves {
-    background-image: url('../../assets/images/wavesResponsive.png');
-    min-height: 2330px;
-  }
-
-  .btns img {
-    min-width: 230px;
-  }
-
-  .btnMedium img {
-    width: 250px;
-  }
-
-} */
+}
