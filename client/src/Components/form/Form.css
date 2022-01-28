@@ -269,7 +269,7 @@
 
 
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .together-waves {
     min-height: 1300px;
 
@@ -277,18 +277,18 @@
   
 .containerPadre{
   height: 1500px;
-}
-}
+  }
+} */
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 
   .together-waves { 
     background-size: contain;
   }
-/* 
+
   .minibtns {
     margin: 10% auto;
-  } */
+  }
 
 
   .footerTexts {
@@ -302,13 +302,13 @@
     justify-content: center;
   }
 
-}
+} */
 
 
 @media (max-width: 768px) {
 
   .together-waves{
-    /* background-image: url('../../assets/images/wavesResponsive.png'); */
+    background-image: url('../../assets/images/wavesResponsive.png');
     background-image: none;
     background-position: bottom;
     min-height: 2750px;
@@ -329,10 +329,10 @@
 }
 
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
 
   .together-waves{
-    /* background-image: url('../../assets/images/wavesResponsive.png'); */
+    background-image: url('../../assets/images/wavesResponsive.png');
     background-position: bottom;
     min-height: 2000px;
     
@@ -346,7 +346,7 @@
   .footerTexts {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
 
 
@@ -364,14 +364,19 @@
 
     .together-waves {
       min-height: 1500px;
+      width: 100%;
     }
     
     .containerPadre {
       height: 100%;
     }
 
+    .icono{
+      /* width: 20px; */
+    }
+
     .btns {
-      width: 350px;
+      width: 320px;
       margin-bottom: -50px;
       background-image: url('../../assets/images/wavesResponsive.png');
       background-repeat: no-repeat;
@@ -383,6 +388,8 @@
 
     .footerDivGroup{
       margin-bottom: -40px;
+      background-color: black;
+      width: 100%;
     }
   }
 
@@ -409,7 +416,7 @@
     width: 120px;
   } */
 
-}
+
 
 
 /* @media (max-width: 320px) {
