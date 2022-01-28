@@ -4,7 +4,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  height: 1400px;
+
 }
 
 .together-waves {
@@ -16,7 +17,8 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-height: 1000px;
+  min-height: 1600px;
+  padding-bottom: 150px;
 
 }
 
@@ -27,12 +29,14 @@
   justify-content: center;
   flex-direction: column;
   background-color: #004c80;
+  position: absolute;
+  margin-top: 600px;
   color: seashell;
   border-radius: 8px;
   min-width: 320px;
   max-height: 550px;
   max-width: 350px;
-  margin: auto;
+  /* margin: auto; */
 
 
 }
@@ -150,6 +154,7 @@
   justify-content: center;
   align-items: center;
   margin: 15px;
+  margin-top: 670px;
 }
 
 .minibtns {
@@ -167,7 +172,7 @@
 }
 
 .iconLeft:hover {
-  animation: 1s infinite tada;
+  animation: 0.3s 3 pulse;
 
 }
 
@@ -180,7 +185,7 @@
 }
 
 .iconRight:hover {
-  animation: 1s infinite tada;
+  animation: 0.3s 3 pulse;
 
 }
 
@@ -192,7 +197,7 @@
 }
 
 .btnMedium:hover {
-  animation: 1s infinite tada;
+  animation: 0.3s 3 pulse;
 
 }
 
@@ -202,15 +207,33 @@
 }
 
 .icono:hover {
-  animation: 1s infinite tada;
+  animation: 0.3s 3 pulse;
 }
 
 .facebookIcon {
   width: 40%;
+  cursor: pointer;
+}
+
+.footerDiv div{
+  color: white;
 }
 
 .titleFooter {
   text-align: start;
+  font-weight: 900;
+  margin-bottom: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.contentFooter {
+  text-align: start; 
+  text-decoration: none;
+}
+
+.contentFooter :hover {
+  color: orange;
 }
 
 
@@ -225,7 +248,7 @@
 .footerTexts {
   display: flex;
   flex-direction: row;
-  
+  margin-top: 20px;
 }
 
 .footerTexts > div {
@@ -285,7 +308,8 @@
 @media (max-width: 768px) {
 
   .together-waves{
-    background-image: url('../../assets/images/wavesResponsive.png');
+    /* background-image: url('../../assets/images/wavesResponsive.png'); */
+    background-image: none;
     background-position: bottom;
     min-height: 2750px;
     
@@ -308,7 +332,7 @@
 @media (max-width: 576px) {
 
   .together-waves{
-    background-image: url('../../assets/images/wavesResponsive.png');
+    /* background-image: url('../../assets/images/wavesResponsive.png'); */
     background-position: bottom;
     min-height: 2000px;
     
@@ -322,6 +346,44 @@
   .footerTexts {
     display: flex;
     flex-direction: column;
+  }
+
+
+
+  @media (max-width: 700px){
+    .formContainer {
+      position: relative;
+    }
+    .footerTexts {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
+    .titleFooter {
+      margin-top: 20px;
+    }
+
+    .together-waves {
+      min-height: 1500px;
+    }
+    
+    .containerPadre {
+      height: 100%;
+    }
+
+    .btns {
+      width: 350px;
+      margin-bottom: -50px;
+      background-image: url('../../assets/images/wavesResponsive.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-top: 80px;
+      padding-bottom: 60px;
+
+    }
+
+    .footerDivGroup{
+      margin-bottom: -40px;
+    }
   }
 
 

@@ -3,12 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #e3dfde;
+    /* background-color: #e3dfde; */
+    background-color: #dbd7d5;
     height: 50px;
     width: 100%;
     min-width: 100%;
     box-shadow: black;
-    
+    position: fixed;
+    z-index: 100;
 }
 
 .menu-icon{
@@ -16,6 +18,7 @@
     margin-left: 20%;
     height: 20px;
     color: #004c80;
+    cursor: pointer;
 }
 
 .logo-container{
@@ -24,8 +27,13 @@
     margin: auto;
     height: 35px;
     overflow: hidden;
-    animation: 1.5s infinite swing;
+    animation: 4s 1 backInDown;
+    cursor: pointer;
 }
+
+/* .logo-container:hover {
+    animation: 1.5s infinite swing;
+} */
 
 
 @media (max-width: 600px){
