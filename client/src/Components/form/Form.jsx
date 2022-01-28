@@ -217,58 +217,88 @@ export default function Form() {
                             </div>
                         </Link>
                     </div>
-                    
+
+
+
+
+
                     <div className="footerTexts">
 
 
                         <div className="footerDiv">
-                            <Link to='/prueba'>
+                            <Link to='/prueba' className='titleFooter'>
                                 <strong style={{ color: 'white' }}>El viaje</strong>
                             </Link >
-                            <p style={{ color: 'white' }}>El día a día</p>
-                            <p style={{ color: 'white' }}>Hoteles</p>
-                            <p style={{ color: 'white' }}>Paradise Chile</p>
-                            <p style={{ color: 'white' }}>Paradise Card</p>
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>El día a día</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Hoteles</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Chile</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Card</p>
+                            </Link >
 
                         </div>
                         <div className="footerDiv">
                             <Link to='/prueba' className='titleFooter'>
                                 <strong style={{ color: 'white' }}>El viaje</strong>
                             </Link >
-
-                            <p style={{ color: 'white' }}>El día a día</p>
-                            <p style={{ color: 'white' }}>Hoteles</p>
-                            <p style={{ color: 'white' }}>Paradise Chile</p>
-                            <p style={{ color: 'white' }}>Paradise Card</p>
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>El día a día</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Hoteles</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Chile</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Card</p>
+                            </Link >
 
                         </div>
                         <div className="footerDiv">
                             <Link to='/prueba' className='titleFooter'>
                                 <strong style={{ color: 'white' }}>El viaje</strong>
                             </Link >
-
-                            <p style={{ color: 'white' }}>El día a día</p>
-                            <p style={{ color: 'white' }}>Hoteles</p>
-                            <p style={{ color: 'white' }}>Paradise Chile</p>
-                            <p style={{ color: 'white' }}>Paradise Card</p>
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>El día a día</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Hoteles</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Chile</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Card</p>
+                            </Link >
 
                         </div>
                         <div className="footerDiv">
                             <Link to='/prueba' className='titleFooter'>
                                 <strong style={{ color: 'white' }}>El viaje</strong>
                             </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>El día a día</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Hoteles</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Chile</p>
+                            </Link >
+                            <Link to='/prueba' className='titleFooter'>
+                                <p style={{ color: 'white' }}>Paradise Card</p>
+                            </Link >
 
-                            <p style={{ color: 'white' }}>El día a día</p>
-                            <p style={{ color: 'white' }}>Hoteles</p>
-                            <p style={{ color: 'white' }}>Paradise Chile</p>
-                            <p style={{ color: 'white' }}>Paradise Card</p>
 
                         </div>
                     </div>
-
-
-
-
                 </footer>
             </div>
         </div>
