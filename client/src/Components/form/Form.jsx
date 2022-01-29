@@ -186,8 +186,6 @@ export default function Form() {
 
                 </div>
 
-
-
                 <footer className='footerDivGroup'>
 
                     <div className='divSocialIcons'>
@@ -214,13 +212,7 @@ export default function Form() {
                         </div>
                     </div>
 
-
-
-
-
                     <div className="footerTexts">
-
-
                         <div className="footerDiv">
                             <div  className='titleFooter'>
                                 <div>El viaje</div>
@@ -291,11 +283,10 @@ export default function Form() {
                             <div  className='contentFooter'>
                                 <div>Paradise Card</div>
                             </div>
-
-
                         </div>
                     </div>
                 </footer>
+
             </div>
         </div>
     )
