@@ -2,7 +2,7 @@ import './navBar.css'
 // import DehazeIcon from '@mui/icons-material/Dehaze';
 import MenuButton from '../../assets/images/menu-button.png'
 
-export function NavBar() {
+export function NavBar() { 
 
     return <div className='navBar-container'>
         <img className='menu-icon' src={MenuButton} alt='img not found' />
