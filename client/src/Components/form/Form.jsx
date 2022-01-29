@@ -10,8 +10,8 @@ import Facebook from '../../assets/images/facebook.png';
 import Instagram from '../../assets/images/instagram.png';
 import Whatsapp from '../../assets/images/whatsapp.png';
 import Youtube from '../../assets/images/youtube.png';
-
 import { NavBar } from '../navBar/navBar.jsx';
+import 'animate.css';
 
 
 const initialState = {
@@ -82,10 +82,11 @@ export default function Form() {
     };
 
     return (
+        <div className="containerPadre">
 
-        <div className="together-waves">
 
-            <div className="containers">
+
+            <div className="together-waves">
 
                 <NavBar />
 
@@ -174,54 +175,128 @@ export default function Form() {
                         </button>
                     </form>
                 </div>
-
                 <div className='btns'>
-                    <img className='iconLeft' src={BotonIzquierda} alt='img not found' />
-                    <img className='iconRight' src={BotonDerecha} alt='img not found' />
+                    <div className='minibtns' >
+                        <img className='iconLeft' src={BotonIzquierda} alt='img not found' />
+                        <img className='iconRight' src={BotonDerecha} alt='img not found' />
+                    </div>
+                    <div className='btnMedium'>
+                        <img src={BotonCentral} alt='img not found' />
+                    </div>
+
                 </div>
 
-                <div className='btnMedium'>
-                    <img className='iconMedium' src={BotonCentral} alt='img not found' />
-                </div>
 
-            </div>
 
-            {/* <div className='divLogoFooter'>
-                <img className='logoFooter' src="/images/LogoParadise.png" alt="img not found" />
-            </div> */}
-            <div className='divSocialIcons'>
-                <Link to= '/prueba'>
-                    <img className='facebookIcon' src={Facebook} alt="img not found" />
-                </Link>
-                <img className='socialIcon' src={Instagram} alt='img not found' />
-                <img className='socialIcon' src={Whatsapp} alt='img not found' />
-                <img className='socialIcon' src={Youtube} alt='img not found' />
+                <footer className='footerDivGroup'>
+
+                    <div className='divSocialIcons'>
+
+                        <div>
+                            <div className='icono'>
+                                <img className='facebookIcon' src={Facebook} alt="img not found" />
+                            </div>
+                        </div>
+                        <div>
+                            <div className="icono">
+                                <img className='facebookIcon' src={Instagram} alt='img not found' />
+                            </div>
+                        </div>
+                        <div >
+                            <div className="icono">
+                                <img className='facebookIcon' src={Whatsapp} alt='img not found' />
+                            </div>
+                        </div>
+                        <div>
+                            <div className="icono">
+                                <img className="facebookIcon" src={Youtube} alt='img not found' />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div className="footerTexts">
+
+
+                        <div className="footerDiv">
+                            <div  className='titleFooter'>
+                                <div>El viaje</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>El día a día</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Hoteles</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Paradise Chile</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Paradise Card</div>
+                            </div>
+
+                        </div>
+                        <div className="footerDiv">
+                            <div  className='titleFooter'>
+                                <div>El viaje</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>El día a día</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div >Hoteles</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Paradise Chile</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Paradise Card</div>
+                            </div>
+
+                        </div>
+                        <div className="footerDiv">
+                            <div className='titleFooter'>
+                                <div>El viaje</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>El día a día</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Hoteles</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Paradise Chile</div>
+                            </div>
+                            <div className='contentFooter'>
+                                <div>Paradise Card</div>
+                            </div>
+
+                        </div>
+                        <div className="footerDiv">
+                            <div className='titleFooter'>
+                                <div>El viaje</div>
+                            </div>
+                            <div className='contentFooter'>
+                                <div>El día a día</div>
+                            </div>
+                            <div className='contentFooter'>
+                                <div>Hoteles</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Paradise Chile</div>
+                            </div>
+                            <div  className='contentFooter'>
+                                <div>Paradise Card</div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </footer>
             </div>
-            <div className='titleFooter'>
-                <strong style={{ color: 'white' }}>El viaje</strong>
-            </div>
-            <br />
-            <div className='textFooter'>
-                <p style={{ color: 'white' }}>El día a día</p>
-                <p style={{ color: 'white' }}>Hoteles</p>
-                <p style={{ color: 'white' }}>Paradise Chile</p>
-                <p style={{ color: 'white' }}>Paradise Card</p>
-            </div>
-            {/* <div className='titleFooter'>
-                <strong style={{color: 'white'}}>El viaje</strong>
-            </div>
-            <div className='textFooter'>
-                <p style={{color: 'white'}}>El día a día</p>
-            </div>
-            <div className='textFooter2'>
-                <p style={{color: 'white'}}>Hoteles</p>
-            </div>
-            <div className='textFooter3'>
-                <p style={{color: 'white'}}>Paradise Chile</p>
-            </div>
-            <div className='textFooter4'>
-                <p style={{color: 'white'}}>Paradise Card</p>
-            </div> */}
         </div>
     )
 }
